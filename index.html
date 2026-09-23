@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Pelotilla Bar Kiwi</title>
+    <meta content="Informacion variada sobre diversos temas de interes." name="description" />
+    <meta content="bar kiwi, wifi libre, redes inalambricas, wireless, pelotilla, castrillo de la vega, celtaspipas, monedas de ucrania, conocer kiev, bekaret, cuesta de las bodegas"
+      name="keywords" />
+    <link href="imagenes/kiwi.gif" type="image/gif" rel="icon" />
+    <style type="text/css"> 
+<!-- 
+body  {
+	background: #666666;
+	margin: 0; /* es recomendable ajustar a cero el margen y el relleno del elemento body para lograr la compatibilidad con la configuración predeterminada de los diversos navegadores */
+	padding: 0;
+	text-align: center; /* esto centra el contenedor en los navegadores IE 5*. El texto se ajusta posteriormente con el valor predeterminado de alineación a la izquierda en el selector #container */
+	color: #00F;
+	background-image: url(imagenes/page_bg.jpg);
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	font-style: normal;
+}
+.twoColHybLtHdr #container {
+	width: 80%;  /* esto creará un contenedor con el 80% del ancho del navegador */
+	background: #FFFFFF;
+	margin: 0 auto; /* los márgenes automáticos (conjuntamente con un ancho) centran la página */
+	border: 1px solid #000000;
+	text-align: center; /* esto anula text-align: center en el elemento body. */
+} 
+.twoColHybLtHdr #header { 
+	background: #DDDDDD; 
+	padding: 0 10px;  /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen bajo él. Si se utiliza una imagen en el #header en lugar de texto, es posible que le interese quitar el relleno. */
+} 
+.twoColHybLtHdr #header h1 {
+	margin: 0; /* el ajuste en cero del margen del último elemento del div de #header evita la contracción del margen (un espacio inexplicable entre divs). Si el div tiene un borde alrededor, esto no es necesario, ya que también evita la contracción del margen */
+	padding: 10px 0; /* el uso de relleno en lugar de margen le permitirá mantener el elemento alejado de los bordes del div */
+}
+
+/* Sugerencias para sidebar1:
+1. Dado que está trabajando en unidades relativas, es conveniente no utilizar relleno en la barra lateral. Se añadirá al ancho global en el caso de navegadores que cumplen los estándares, creando un ancho real desconocido. 
+2. Dado que se utilizan las unidades em para el valor de barra lateral, tenga en cuenta que su ancho variará con los diferentes tamaños de texto predeterminados.
+3. El espacio entre el lado del div y los elementos que contiene puede crearse colocando un margen izquierdo y derecho en dichos elementos, como se observa en la regla ".twoColHybLtHdr #sidebar1 p".
+*/
+.twoColHybLtHdr #sidebar1 {
+	float: left;
+	width: 16em; /* dado que este elemento es flotante, debe asignarse un ancho */
+	background: #EBEBEB; /* el color de fondo se mostrará a lo largo de todo el contenido de la columna, pero no más allá */
+	padding: 15px 0; /* el relleno superior e inferior crea un espacio visual dentro de este div  */
+	text-align: center;
+	font-size: 75%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.twoColHybLtHdr #sidebar1 h3, .twoColHybLtHdr #sidebar1 p {
+	margin-left: 10px; /* deben asignarse los márgenes izquierdo y derecho de cada elemento que vaya a colocarse en las columnas laterales */
+	margin-right: 10px;
+	text-align: center;
+}
+
+/* Sugerencias para mainContent:
+1. El espacio entre el mainContent y sidebar1 se crea con el margen izquierdo del div mainContent.  Con independencia de la cantidad de contenido que incluya el div sidebar1, permanecerá el espacio de la columna. Puede quitar el margen izquierdo si desea que el texto del div #mainContent llene el espacio de #sidebar1 cuando termine el contenido de #sidebar1.
+2. Tenga en cuenta que es posible que se produzca la caída de un elemento flotante (la caída del área mainContent no flotante debajo de la barra lateral) si se coloca un elemento más ancho que él en el div mainContent. Con un diseño híbrido (ancho global basado en porcentajes con barra lateral basada en ems), puede que no sea posible calcular exactamente el ancho disponible. Si el tamaño del texto del usuario es superior a la media, tendrá un div de barra lateral más ancho y, en consecuencia, menos espacio en el div mainContent. Debe tener en cuenta esta limitación (particularmente si el cliente añade contenido con Contribute.
+3. En el siguiente comentario condicional de Internet Explorer, la propiedad zoom se utiliza para asignar a mainContent "hasLayout." Esto puede contribuir a evitar diversos problemas específicos de IE.
+*/
+.twoColHybLtHdr #mainContent {
+	margin: 0 20px 0 13em;
+	color: #039;
+	text-align: justify;
+} 
+.twoColHybLtHdr #footer { 
+	padding: 0 10px; /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen por encima de él. */
+	background:#DDDDDD;
+} 
+.twoColHybLtHdr #footer p {
+	margin: 0; /* el ajuste en cero de los márgenes del primer elemento del pie evitará que puedan contraerse los márgenes (un espacio entre divs) */
+	padding: 10px 0; /* el relleno de este elemento creará espacio, de la misma forma que lo haría el margen, sin el problema de la contracción de márgenes */
+}
+
+/* Varias clases diversas para su reutilización */
+.fltrt { /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase debe colocarse en un elemento div o break y debe ser el último elemento antes del cierre de un contenedor que incluya completamente a un elemento flotante */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.twoColHybLtHdr #container #footer p strong {
+	color: #F00;
+	font-weight: bold;
+}
+.twoColHybLtHdr #container #sidebar1 p {
+	font-size: 14%;
+}
+.twoColHybLtHdr #container #sidebar1 p {
+	font-size: 12px;
+	font-weight: normal;
+}
+.twoColHybLtHdr #container #mainContent #form1 label {
+	text-align: center;
+}
+.twoColHybLtHdr #container #sidebar1 #form2 #cajamenu #menu li a {
+	font-family: Verdana, Geneva, sans-serif;
+}
+.twoColHybLtHdr #container #sidebar1 #form2 #cajamenu #menu li a {
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.twoColHybLtHdr #container #sidebar1 #form2 #cajamenu #menu li a {
+	font-family: "Courier New", Courier, monospace;
+}
+.twoColHybLtHdr #container #sidebar1 #form2 #cajamenu #menu li a {
+	font-family: Arial, Helvetica, sans-serif;
+}
+.twoColHybLtHdr #container #sidebar1 #form2 #cajamenu #menu {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 10px;
+}
+.twoColHybLtHdr #container #sidebar1 #form2 #cajamenu #menu li a {
+	font-size: 12px;
+}
+.v {
+	font-weight: normal;
+}
+p {
+	text-align: justify;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> /* coloque las reparaciones de css para todas las versiones de IE en este comentario condicional */.twoColHybLtHdr #sidebar1 { padding-top: 30px; }.twoColHybLtHdr #mainContent { zoom: 1; padding-top: 15px; }/* la propiedad zoom propia que se indica más arriba proporciona a IE el hasLayout que puede necesitar para evitar diversos errores */</style><![endif]-->
+  </head>
+  <body class="twoColHybLtHdr">
+    <div id="container">
+      <div id="header">
+        <h1><img src="imagenes/fondo-superior.gif" width="779" height="166" align="middle" /></h1>
+      </div>
+      <div id="sidebar1">
+        <form action="clave.htm" method="post" name="form0" id="form0">
+          <!--************CODE GEOCOUNTER************-->
+          <script src="http://geoloc1.geovisite.com/private/geocounter.js?compte=838476743048"
+type="text/javascript"></script> <noscript>
+<a target="_blank" href="http://www.geovisites.com/es/directory/sociedad_culturas-alternativas.php"><img
+alt="culturas alternativas" src="http://geoloc1.geovisite.com/private/geocounter.php?compte=838476743048"
+border="0" /></a>
+<br />Please do not change this code for a perfect fonctionality of your counter
+<a href="http://www.geovisites.com/es/directory/sociedad_culturas-alternativas.php">culturas alternativas</a>
+</noscript><!--************END CODE GEOCOUNTER************--> <label>
+            <p>Nuestras Secciones</p>
+            <div id="cajamenu" align="left">
+              <ul id="menu">
+                <li><a href="http://ca-y-ro.blogspot.com/">Desenvolverse en kiev</a></li>
+                <li><a href="http://bimoucra.blogspot.com/">La moneda de Ucrania</a></li>
+                <li><a href="http://cayro.webcindario.com/wifi/wifi.html">Seguridad
+                    Wifi</a></li>
+                <li><a href="http://celtaspipas.webcindario.com/">Club
+                    Celtaspipas</a></li>
+                <li><a href="http://castrillo.webcindario.com/">Castrillo de la
+                    Vega</a></li>
+                <li><a href="http://cayro.webcindario.com/kiwi.htm">Pelotilla
+                    Bar Kiwi</a></li>
+                <li><a href="http://cayro.webcindario.com/torpes/torpes.html">Informática
+                    para torpes</a></li>
+              </ul>
+            </div>
+          </label> </form>
+        <form action="kiwi.htm" method="post" name="form3" id="form3"><label>
+            Pelotilla Bar Kiwi <br />
+            <a href="http://cayro.webcindario.com/kiwi.htm" target="_top"><img src="imagenes/Balon.gif"
+                alt="" style="width: 184px; height: 67px;" /></a> Lo que
+            necesitas saber sobre la segurdad de las redes inalámbricas
+            domesticas <a href="http://cayro.webcindario.com/wifi/wifi.html" target="_top"><img
+                src="imagenes/wifi.jpg" alt="" style="width: 150px; height: 120px;" /></a><br />
+            <p> Acceso a la sección del Club Celtaspipas</p>
+            <a href="http://celtaspipas.webcindario.com/" target="_top"><img src="imagenes/celtaspipas.jpg"
+                alt="" /></a><br />
+            <br />
+            <a href="https://cayro.webcindario.com/ivan/ivan.html" target="_top"><img
+                src="ivan/ivan.jpg" alt="" /></a><br />
+          </label> </form>
+      </div>
+      <div id="mainContent">
+        <table border="0" width="583" align="center">
+          <tbody>
+            <tr>
+              <td width="275" height="81"><img alt="y" src="imagenes/valor.gif"
+                  width="199" height="91" /></td>
+              <td width="292" align="right"><strong>BILBAO</strong> <a href="http://www.wunderground.com/global/stations/08025.html?bannertypeclick=gizmotimetemp24"><img
+                    alt="Click for Bilbao, España Forecast" src="http://weathersticker.wunderground.com/weathersticker/gizmotimetemp_metric24/language/www/global/stations/08025.gif"
+                    border="0" width="127" height="41" /></a></td>
+            </tr>
+          </tbody>
+        </table>
+        <h1>Historia</h1>
+        <p>Esta página nació para consultar los datos de la pelotilla del Bar
+          Kiwi, pero con el tiempo se ha ido ampliando y se fueron creando
+          varias secciones, las cuales detallo seguidamente.</p>
+        <h2>Desenvolverse en Kiev</h2>
+        <p>Esta fue la primera sección que se creo en ella doy información a
+          todas las personas que por el motivo que sea tengan que viajar a
+          Ucrania.</p>
+        <h2>La moneda de Ucrania</h2>
+        <p>Esta sección se creo como complemento a la anterior en ella se
+          detallan todas las monedas y billetes de Ucrania, así como su cambio a
+          otras monedas, esta ha pasado ha ser la sección mas internacional
+          siendo seguida por personas de mas de 50 países.</p>
+        <h2>Seguridad Wifi</h2>
+        <p>Dada la gran cantidad de gente que me consulta sobre la seguridad de
+          las redes wifi que van instalando en casa, decidí crear esta sección
+          para que sirva de consulta a cualquiera que tenga alguna inquietud
+          sobre este tema.</p>
+        <h2>Club Celtaspipas</h2>
+        <p>Ha raíz de la celebración del primer encuentro en el 50 cumpleaños de
+          la mayoría de los miembros del club Celtaspipas, se creo esta sección,
+          y os recuerdo que se ha acordado para los años venideros que se
+          celebrara una cena el primer sábado de Agosto, os esperamos.</p>
+        <h2>Castrillo de la Vega</h2>
+        <p>Aquí podéis ver este pueblo castellano situado a 8 km de Aranda de
+          Duero. Os lo enseño por medio de una serie de fotografías esfericas,
+          las cuales nos permiten movernos de derecha a izquierda y hacia arriba
+          y para el suelo, también nos permite hacer zoom sobre cualquier parte
+          de las fotografías.</p>
+        <h2>Pelotilla Bar Kiwi</h2>
+        <p>Esta es la sección que se creo a raíz de la primera ampliación de
+          esta página aquí podéis consultar la puntuación de los jugadores de
+          esta singular pelotilla, también indicamos donde nos encontramos y
+          mostramos los resultados de fútbol.</p>
+        <h2>Informática para torpes</h2>
+        <p>Aquí hablamos de informática para personas que no hayan visto un
+          ordenador en su vida, explicamos que es un ordenador, sus partes, los
+          sistemas operativos, los programas. No pretendemos formar expertos,
+          pero si adquirir ciertos conocimientos básicos.</p>
+        <h1 align="center">COSAS CURIOSAS</h1>
+        <h2 align="center"><img src="imagenes/Paloma.gif" width="160" height="120" /></h2>
+        <h2 align="center">Porque cambia de fechas la Semana Santa</h2>
+        <p>Cuenta la historia, que la noche en la que el pueblo judío salió de
+          Egipto, había luna llena y eso les permitió prescindir de las lámparas
+          para que no les descubrieran los soldados del faraón. <br />
+          Los judíos celebran este acontecimiento cada año en la pascua judía o
+          "Pesaj", que siempre concuerda con una noche de luna llena, en
+          recuerdo de los israelitas que huyeron de Egipto pasando por el Mar
+          Rojo.<br />
+          Podemos estar seguros, por lo tanto, de que el primer Jueves Santo de
+          la historia, cuando Jesús celebraba la Pascua judía con su discípulos,
+          era una noche de luna llena. <span id="SearchKey_Text1">Desde el
+            Concilio de Nicea, en el año 325, se decidió que la Pascua de
+            Resurrección se celebrara "el domingo después a la primera luna
+            llena de primavera" </span></p>
+        <h2 align="center">LIMPIAR LA PANTALLA DEL MONITOR</h2>
+        <p>Aunque en las instrucciones de mantenimiento del monitor no se
+          indica, es muy importante limpiar la pantalla por su interior, ya que
+          esto mejora su rendimiento y alarga un 60% la vida útil del monitor,
+          lo que implica el desmontarlo y eso solo esta reservado para el
+          personal técnico, pero si que se puede realizar una limpieza del
+          interior sin tener que desmontarlo con la siguiente utilidad. <br />
+          <a href="LIMPIADOR.SWF">Limpiar la pantalla por dentro</a></p>
+        <h3 align="center"><em>Autopista Moderna</em></h3>
+        <p>Siempre se ha oído que las mejores autopistas estan en Alemania, pero
+          hay en Ucrania una autopista que en la mediana dispone de dos railes
+          elevados a 1 metro de altura que permite circular con grandes nevadas,
+          aunque de momento solo se permite circular a los taxis <a href="Autopista/index.html">ver
+
+
+
+
+            imagenes</a></p>
+      </div>
+      <div id="footer">
+        <p><strong>Previsión Meteorológica para Barakaldo</strong></p>
+        <div id="TT_v7sEM2DP326Ap8iobIz">
+          <h2><a href="http://www.tutiempo.net/Tiempo-Espana.html">El Tiempo</a></h2>
+          <a href="http://www.tutiempo.net/Tiempo-Barakaldo-E48130.html">El
+            tiempo en Barakaldo</a></div>
+        <script src="http://www.tutiempo.net/TTapi/v7sEM2DP326Ap8iobIz" type="text/javascript"></script>
+        <!-- http://contadores.miarroba.es  -->
+        <script src="http://contadores.miarroba.es/ver.php?id=667670" type="text/javascript"></script>
+        <!-- http://contadores.miarroba.es  --> </div>
+    </div>
+  </body>
+</html>
