@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Informatica para torpes</title>
+
+
+<link rel="icon" type="image/ico" href="favicon.ico" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* es recomendable ajustar a cero el margen y el relleno del elemento body para lograr la compatibilidad con la configuración predeterminada de los diversos navegadores */
+	padding: 0;
+	text-align: center; /* esto centra el contenedor en los navegadores IE 5*. El texto se ajusta posteriormente con el valor predeterminado de alineación a la izquierda en el selector #container */
+	color: #000000;
+	background-color: #316AC5;
+}
+
+/* Sugerencias para diseños elásticos 
+1. Dado que el tamaño global de los diseños elásticos se basa en el tamaño de fuente predeterminado del usuario, resultan algo más impredecibles. Si se utilizan correctamente, también son más accesibles para aquellas personas que necesitan tamaños de fuentes más grandes, dado que la longitud de línea mantiene la proporcionalidad.
+2. La asignación de tamaño a los divs en este diseño se basa en el 100% del tamaño de fuente en el elemento body. Si reduce el tamaño global del texto empleando font-size: 80% en el elemento body o el #container, recuerde que todo el diseño reducirá su tamaño proporcionalmente. Es posible que le interese aumentar los anchos de los diversos divs para compensar este efecto.
+3. Si la asignación de tamaño de fuente se modifica de forma distinta en cada div en lugar de hacerse en el diseño global (es decir: a #sidebar1 se le asigna un 70% de tamaño de fuente y a #mainContent se le asigna un 85% de tamaño de fuente), ello hará que se modifique proporcionalmente el tamaño global de cada uno de los divs. Si lo desea, puede realizar el ajuste basándose en la asignación de tamaño de fuente final.
+*/
+.twoColElsLtHdr #container {
+	width: 46em;  /* este ancho creará un contenedor que cabrá en una ventana de navegador 800px si el texto se deja con los tamaños de fuente predeterminados del navegador */
+	background: #FFFFFF;
+	margin: 0 auto; /* los márgenes automáticos (conjuntamente con un ancho) centran la página */
+	border: 1px solid #000000;
+	text-align: left; /* esto anula text-align: center en el elemento body. */
+} 
+.twoColElsLtHdr #header { 
+	background: #DDDDDD; 
+	padding: 0 10px;  /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen bajo él. Si se utiliza una imagen en el #header en lugar de texto, es posible que le interese quitar el relleno. */
+} 
+.twoColElsLtHdr #header h1 {
+	margin: 0; /* el ajuste en cero del margen del último elemento del div de #header evita la contracción del margen (un espacio inexplicable entre divs). Si el div tiene un borde alrededor, esto no es necesario, ya que también evita la contracción del margen */
+	padding: 10px 0; /* el uso de relleno en lugar de margen le permitirá mantener el elemento alejado de los bordes del div */
+	text-align: center;
+	background-color: #DDD;
+	border-top-color: #FC6;
+	border-right-color: #FC6;
+	border-bottom-color: #FC6;
+	border-left-color: #FC6;
+	border-color: #FC6;
+	outline-color: #FC6;
+}
+
+/* Sugerencias para sidebar1:
+1. Tenga en cuenta que, si establece un valor de tamaño de fuente en este div, el ancho global del div se ajustará en función de éste.
+2. Dado que está trabajando en ems, es conveniente no utilizar relleno en la barra lateral propiamente dicha. Se añadirá al ancho en el caso de navegadores que cumplen los estándares, creando un ancho real desconocido. 
+3. El espacio entre el lado del div y los elementos que contiene puede crearse colocando un margen izquierdo y derecho en dichos elementos, como se observa en la regla ".twoColElsLtHdr #sidebar1 p".
+*/
+.twoColElsLtHdr #sidebar1 {
+	float: left; 
+	width: 12em; /* dado que este elemento es flotante, debe asignarse un ancho */
+	background: #EBEBEB; /* el color de fondo se mostrará a lo largo de todo el contenido de la columna, pero no más allá */
+	padding: 15px 0; /* el relleno superior e inferior crea un espacio visual dentro de este div */
+}
+.twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
+	margin-left: 10px; /* deben asignarse los márgenes izquierdo y derecho de cada elemento que vaya a colocarse en las columnas laterales */
+	margin-right: 10px;
+}
+
+/* Sugerencias para mainContent:
+1. Si asigna a este div #mainContent un valor de tamaño de fuente distinto del que tiene el div #sidebar1, los márgenes del div #mainContent se basarán en su tamaño de fuente y el ancho del div #sidebar1 se basará en su tamaño de fuente. Puede que le interese ajustar los valores de estos divs.
+2. El espacio entre el mainContent y sidebar1 se crea con el margen izquierdo del div mainContent.  Con independencia de la cantidad de contenido que incluya el div sidebar1, permanecerá el espacio de la columna. Puede quitar el margen izquierdo si desea que el texto del div #mainContent llene el espacio de #sidebar1 cuando termine el contenido de #sidebar1.
+3. Para evitar la caída de un elemento flotante, puede que tenga que realizar pruebas con el fin de determinar el tamaño máximo aproximado de la imagen/el elemento, ya que este diseño se basa en el tamaño de fuente del usuario combinado con los valores que usted establezca. Sin embargo, si el usuario tiene configurado un tamaño de fuente inferior al normal, habrá menos espacio disponible en el div #mainContent del que observará al realizar la prueba.
+4. En el siguiente comentario condicional de Internet Explorer, la propiedad zoom se utiliza para asignar a mainContent "hasLayout." Esto evita que se produzcan diversos problemas específicos de IE.
+*/
+.twoColElsLtHdr #mainContent {
+	margin: 0 1.5em 0 13em; /* el margen derecho puede asignarse en ems o píxeles. Éste crea el espacio a lo largo de la parte derecha de la página. */
+	text-align: center;
+} 
+.twoColElsLtHdr #footer { 
+	padding: 0 10px; /* este relleno coincide con la alineación izquierda de los elementos de los divs que aparecen por encima de él. */
+	background:#DDDDDD;
+} 
+.twoColElsLtHdr #footer p {
+	margin: 0; /* el ajuste en cero de los márgenes del primer elemento del pie evitará que puedan contraerse los márgenes (un espacio entre divs) */
+	padding: 10px 0; /* el relleno de este elemento creará espacio, de la misma forma que lo haría el margen, sin el problema de la contracción de márgenes */
+}
+
+/* Varias clases diversas para su reutilización */
+.fltrt { /* esta clase puede utilizarse para que un elemento flote en la parte derecha de la página. El elemento flotante debe preceder al elemento junto al que debe aparecer en la página. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* esta clase puede utilizarse para que un elemento flote en la parte izquierda de la página. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* esta clase debe colocarse en un elemento div o break y debe ser el último elemento antes del cierre de un contenedor que incluya completamente a un elemento flotante */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+h1 {
+	color: #F00;
+	text-align: center;
+}
+body,td,th {
+	color: #F00;
+}
+.cont {
+}
+.a {
+}
+.twoColElsLtHdr #container #mainContent p {
+	text-align: left;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* coloque las reparaciones de css para todas las versiones de IE en este comentario condicional */
+.twoColElsLtHdr #sidebar1 { padding-top: 30px; }
+.twoColElsLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* la propiedad zoom propia que se indica más arriba proporciona a IE el hasLayout que necesita para evitar diversos errores */
+</style>
+<![endif]--></head>
+
+<body bgcolor="#FFCC66" class="twoColElsLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1><img src="SUPERTORPES.gif" width="698" height="231" /></h1>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+    <h3>Contenido</h3>
+    <p><a href="Ordenador.htm">El ordenador</a></p>
+    <p><a href="Hardware.htm">Hardware</a></p>
+    <p><a href="Software.htm">software</a></p>
+    <p><a href="windows o linux.htm">Windows o linux</a></p>
+    <p>Estamos en obras</p>
+  
+    <p>
+      <!-- end #sidebar1 -->
+    </p>
+  </div>
+  <div id="mainContent">
+  <td align="center"width="126"><img src="Anterior2.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="-1,1,121,32" href="../index.html" />
+    </map></td>
+    <h1>Informática para torpes</h1>
+    <p>Vamos a intentar explicar la informática para gente que disponga de un nivel 0 y con un lenguaje sencillo, poniendo ejemplos cotidianos, para hacerlo mas ameno, no queremos sacar informaticos diplomados, pero si que la persona que entre ahora en este mundo, sepa por donde van los tiros y no se sienta perdido.</p>
+    <p>Como ya es habitual iremos añadiendo información poco a poco, hasta completar la sección</p>
+    <form id="form1" name="form1" method="post" action="">
+      <label>
+        <input name="imageField" type="image" id="imageField" src="obras.gif" align="center" />
+      </label>
+    </form>
+    <p>&nbsp;</p>
+    <h2>Encabezado de nivel H2 </h2>
+    <p>&nbsp;</p>
+  <!-- end #mainContent --></div>
+	<!-- Este elemento de eliminación siempre debe ir inmediatamente después del div #mainContent para forzar al div #container a que contenga todos los elementos flotantes hijos --><br class="clearfloat" />
+   <div id="footer">
+    <p>Pie</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>
