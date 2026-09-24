@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Video en Bucle</title>
+    <style>
+        /* Este estilo hace que el video ocupe toda la pantalla de forma limpia */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000; /* Fondo negro por estética */
+            overflow: hidden;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ajusta el video para llenar la pantalla sin deformarse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Atributos clave: 
+         autoplay (reproducción automática), 
+         loop (bucle infinito), 
+         muted (obligatorio en navegadores modernos para que el autoplay funcione) -->
+    <video autoplay loop muted playsinline>
+        <source src="chucho.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+</body>
+</html>
