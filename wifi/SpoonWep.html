@@ -1,0 +1,106 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<link rel="shortcut icon" href="WIFI.png">
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>SpoonWeb</title>
+<style>
+<!--
+body {
+	background-color: #ccffcc;
+}
+-->
+</style>
+</head>
+<body lang=ES>
+<div class=Section1>
+  <td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+    </map></td>
+  <p align=center style='text-align:center'><span class=SpellE><b><span style='font-size:26.0pt;font-family:
+Arial;color:blue'>SpoonWep</span></b></span><b><span style='font-size:26.0pt;font-family:Arial;color:blue'> 2</span></b></p>
+  <p><span style='font-family:Arial'>Esta utilidad es muy
+    sencilla de utilizar y con muy buenos resultados.</span></p>
+  <p><span style='font-family:Arial'>Empezamos arrancando la
+    utilidad, entonces obtenemos la siguiente imagen, donde aparecen unos valores
+    por defecto, que debemos cambiar y configurarlos dependiendo de la tarjeta que
+    tengamos.</span></p>
+  <p align=center style='text-align:center'><img width=432 height=358
+src="SpoonWep_archivos/image002.jpg" v:shapes="_x0000_i1025">     <img width=430 height=357
+src="SpoonWep_archivos/image004.jpg" v:shapes="_x0000_i1026"></p>
+  <p><span style='font-family:Arial'>En donde pone <b>CHOSE CARD</b> debemos seleccionar la
+    tarjeta nuestra en mi caso WLAN0.</span></p>
+  <p><span style='font-family:Arial'>En donde pone <b>SELECT A DRIVER</b> salvo que tengamos una
+    tarjeta con chip de <em><b><span
+style='font-family:Arial;color:red;font-style:normal;'>Atheros</span></b></em><em><span
+style='font-family:Arial;font-style:normal;'> debemos
+    seleccionar NORMAL.</span></em></span></p>
+  <p><em><span style='font-family:Arial;font-style:normal;
+'>Y donde pone<b> SEL VICTIM MODE</b> pondremos UNKNOWN VICTIM</span></em></p>
+  <p><span style='font-family:Arial'>Y pulsamos <b>NEXT</b>.</span></p>
+  <p><span style='font-family:Arial'>Pasaremos a la siguiente
+    pantalla en la que debemos pulsar en el botón que pone <b>LAUNCH</b> y tras esperar un poco nos aparecen las redes que tenemos a
+    nuestro alcance como podemos ver en la siguiente pantalla.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial'><img width=861 height=647
+src="SpoonWep_archivos/image006.jpg" v:shapes="_x0000_i1027"></span></p>
+  <p><span style='font-family:Arial'>En la columna CLS vemos que
+    hay una casilla con una V, quiere decir que tiene al menos un cliente asociado,
+    si la seleccionamos aparecerá en la parte inferior los datos del cliente. Pero nosotros
+    en esta ocasión como tenemos el otro ordenador apagado, no nos aparece nuestra
+    red con cliente asociado, será un obstáculo pero no un impedimento para ver la
+    clave.</span></p>
+  <p><span style='font-family:Arial'>Seleccionamos nuestra red y
+    pulsamos el botón <b>SELECTION OK</b> y
+    pasaremos a la siguiente pantalla.</span></p>
+  <p><img width=493 height=397
+src="SpoonWep_archivos/image008.jpg" align=right hspace=12 v:shapes="_x0000_s1027"><span
+style='font-family:Arial'> Como podemos
+    apreciar en la casilla <b>Client Less <span
+class=SpellE>Attack</span>,</b> no hay un cliente con el que atacar por eso el
+    recuadro aparece vacío, en caso contrario nos aparecería la mac del cliente
+    seleccionado.</span></p>
+  <p><span style='font-family:Arial'>Donde pone ARP REPLAY ATTACK
+    podemos seleccionar el tipo de ataque que queremos realizar, yo en este caso en
+    vez del que viene por defecto he seleccionado  el de FRAGMENTATION &amp; FORGE ATTACK.</span></p>
+  <p><span style='font-family:Arial'>Y ya solo nos queda pulsar
+    el botón donde pone LAUNCH.</span></p>
+  <p><span style='font-family:Arial'> Y veremos que empieza el ataque a la red.</span></p>
+  <p><span style='font-family:Arial'>Primero se asocia a la red.</span></p>
+  <p><span style='font-family:Arial'>Segundo inicia el ataque.</span></p>
+  <p><span style='font-family:Arial'>Tercero recoge paquetes y
+    empiezan a subir las datas.</span></p>
+  <p><span style='font-family:Arial'>Y por ultimo reinyecta los
+    paquetes de nuevo, si nos fijamos en la siguiente imagen, podemos observar en
+    la parte superior derecha los datos del ataque, en donde podemos ver que en el
+    momento de realizar la captura de la imagen, se esta realizando una reinyección
+    de datos al MODEM de 244 datas por segundo, aunque en ciertos momentos llego
+    460 datas por segundos. También vemos que tenemos una potencia del MODEM de 36
+    con mi adaptador con pasar de 30 es suficiente para realizar un buen ataque de
+    hecho se puede ver que en 1 minuto hemos capturado 11.834 DATAS.</span></p>
+  <p><span style='font-family:Arial'>En la parte inferior de la
+    imagen podemos ver que ya ha empezado a buscar la clave se sabe porque se añade
+    la línea que pone CRACKING WEP, ya que ha partir de 10.000 datas empieza a buscar
+    la clave y continuara hasta que la encuentre.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial'><img width=871 height=653
+src="SpoonWep_archivos/image010.jpg" v:shapes="_x0000_i1028"></span></p>
+  <p><span style='font-family:Arial'>Por ultimo podemos ver en la
+    imagen de abajo, como al final ha conseguido sacar la clave el <span
+class=SpellE>SpoonWep</span>, solo nos la da en hexadecimal, así que si
+    queremos pasarla a ASCII deberemos usar una tabla de conversión, ó también lo
+    podemos hacer en Windows, con Microsoft Word en insertar símbolo, nos sale para
+    poder ver cualquier símbolo, en hexadecimal ó en ASCII.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial'><img width=497 height=413
+src="SpoonWep_archivos/image012.jpg" v:shapes="_x0000_i1029"></span></p>
+  <p align=center style='text-align:center'><b><span style='font-family:Arial;color:red'>¡OJO! </span></b><span
+style='font-family:Arial'>La clave en hexadecimal se pone sin los dos puntos de
+    separación.</span></p>
+</div>
+<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+  </map></td>
+</body>
+</html>

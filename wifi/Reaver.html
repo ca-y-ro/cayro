@@ -1,0 +1,242 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<link rel="shortcut icon" href="WIFI.png">
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>Aunque las redes inalámbricas han conseguido facilitar el que podamos
+disponer de conexión en cualquier punto de nuestra casa sin necesidad de
+cables, a cambio traen un problema de seguridad</title>
+<style>
+<!--
+p.MsoList, li.MsoList, div.MsoList {
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText {
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+}
+a:link, span.MsoHyperlink {
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;
+}
+a:visited, span.MsoHyperlinkFollowed {
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;
+}
+p {
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+}
+span.WW8Num1z0 {
+	font-family:Symbol;
+}
+span.WW8Num1z1 {
+	font-family:"Courier New";
+}
+span.WW8Num1z2 {
+	font-family:Wingdings;
+}
+span.WW8Num2z0 {
+	font-family:Symbol;
+}
+span.WW8Num2z1 {
+	font-family:"Courier New";
+}
+span.WW8Num2z2 {
+	font-family:Wingdings;
+}
+p.Encabezado1, li.Encabezado1, div.Encabezado1 {
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Liberation Sans";
+}
+p.Etiqueta, li.Etiqueta, div.Etiqueta {
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-style:italic;
+}
+p.ndice, li.ndice, div.ndice {
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+}
+body {
+	background-color: #ccffcc;
+}
+-->
+</style>
+</head>
+<body bgcolor=white link=blue vlink=purple lang=ES>
+<div class=Section1>
+  <td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+    </map></td>
+  <p align=center style='text-align:center'><b><span
+style='font-size:24.0pt;font-family:Arial;color:blue'>REAVER WPS</span></b></p>
+  <p><span style='font-family:Arial'>Para empezar diremos
+    que este tipo de ataque va dirigido a Routers con clave <b>WPA</b>, que
+    dispongan de sistema <b>WPS y que este habilitado</b>, en el mercado hay varios
+    modelos que por defecto el sistema <b>WPS</b> esta habilitado.</span></p>
+  <p><b><span style='font-size:16.0pt;font-family:Arial;
+color:red'>Que es WPS</span></b></p>
+  <p><img width=197 height=134
+src="Reaver_archivos/image002.jpg" align=right v:shapes="_x0000_s1027"><span
+style='font-family:Arial'>La idea de <strong><span style='font-family:Arial'>WPS</span></strong> no es la de añadir más seguridad a las redes <b>WPA</b> o <b>WPA2</b>, sino
+    facilitar a los usuarios la configuración de la red, sin necesidad de utilizar
+    complicadas claves o tediosos procesos.</span></p>
+  <p><b><span style='font-family:Arial'>WPS</span></b><span style='font-family:
+Arial'> contempla cuatro tipos de configuraciones diferentes para el
+    intercambio de credenciales:</span></p>
+  <ul type=disc>
+    <li><b><span style='font-family:Arial'>PIN</span></b><span
+     style='font-family:Arial'>: tiene que existir un PIN asignado a cada
+      elemento que vaya a asociarse a la red. Es necesaria la existencia de una
+      interfaz (pantalla y teclado) para que el usuario pueda introducir el
+      mencionado PIN.</span></li>
+  </ul>
+  <ul type=disc>
+    <li><img width=304 height=234
+     src="Reaver_archivos/image005.gif" align=right v:shapes="_x0000_s1031 _x0000_s1026 _x0000_s1028"><b><span
+     style='font-family:Arial'>PBC</span></b><span style='font-family:Arial'>:
+      la generación y el intercambio de credenciales son desencadenados a partir
+      que el usuario presiona un botón (físico o virtual) en el Router y otro en
+      el dispositivo a conectar. Este método tiene un pequeño problema y es que
+      en el corto lapso de tiempo entre que se presiona el botón en el Router y
+      se presiona en el dispositivo, cualquier otra estación próxima puede ganar
+      acceso a la red.</span></li>
+  </ul>
+  <ul type=disc>
+    <li><b><span
+     style='font-family:Arial'>NFC</span></b><span style='font-family:Arial'>:
+      intercambio de credenciales a través de comunicación NFC. La tecnología
+      NFC, permite la comunicación sin hilos entre dispositivos próximos (0 - 20
+      cm.). Entonces, el dispositivo se tiene que situar al lado del Router para
+      desencadenar la autenticación. De esta manera, cualquier usuario que tenga
+      acceso físico al Router, puede obtener credenciales válidas.</span></li>
+    <li><b><span style='font-family:Arial'>USB</span></b><span
+     style='font-family:Arial'>: con este método, las credenciales se
+      transfieren mediante un dispositivo de memoria flash (pendrive) desde el Router al dispositivo a conectar.</span></li>
+  </ul>
+  <p><span lang=AR-SA style='font-family:FreeSans;'>&#65279;</span><b><span style='font-family:Arial'>El <strong><span style='font-family:
+Arial'>sistema de PIN</span></strong></span></b><span style='font-family:Arial'> de esta tecnología <span class=caps><b>WPS</b></span> puede ser <em><span
+style='font-family:Arial;font-style:normal'>reventado</span></em> en poco
+    tiempo, debido a un error en el diseño del sistema <b>WPS</b>, por el que el router “avisa” de que estamos fallando, tras <strong><span
+style='font-family:Arial;font-weight:normal;'>solo
+    comprobar los cuatro primeros</span></strong><strong><span style='font-family:
+Arial'> </span></strong><strong><span style='font-family:Arial;font-weight:
+normal;'>dígitos</span></strong><b> </b>de ese número de identificación personal de ocho bits. </span></p>
+  <p><span style='font-family:Arial'>Mediante un <strong><span style='font-family:
+Arial;font-weight:normal;'>ataque por fuerza bruta</span></strong>,
+    nos llevaría entre dos y diez horas descifrar los 8 números del <span
+class=caps><b>PIN</b></span> del <span
+class=caps><b>WPS</b></span> del router,
+    pues con ese error la seguridad pasa de 100.000.000 de posibilidades a solo 11.000,
+    debido a que solo hay que “acertar” con dos grupos de números por separado: uno
+    de cuatro y otro de tres, pues el último es solo un <span class=SpellE><em><span
+style='font-family:Arial;font-style:normal;'>checksum</span></em></span><em><span
+style='font-family:Arial;font-style:normal;'>.</span></em></span></p>
+  <p><strong><span style='font-size:16.0pt;font-family:Arial;color:red'>Cómo
+    funciona el ataque</span></strong></p>
+  <p><img width=193 height=129
+src="Reaver_archivos/image007.jpg" align=right v:shapes="_x0000_s1029"><span
+style='font-family:Arial'>Lo primero decir que la finalidad es conseguir la
+    clave <b>WPA</b> mediante la obtención del <b>PIN</b> del Router. Ese número de <strong><span style='font-family:Arial'>8 dígitos</span></strong> (7 + el
+    checksum) que  se encuentra habitualmente
+    en una etiqueta pegada al dispositivo, aunque <span class=SpellE>tambien</span> puede ser cambiado por el usuario del <span class=SpellE>Router.</span></span></p>
+  <p><span style='font-family:Arial'>Al lanzar el ataque, se realizan los
+    siguientes pasos:</span></p>
+  <ul type=disc>
+    <li><span style='font-family:Arial'>Petición de
+      autenticación</span></li>
+    <li><span
+     style='font-family:Arial'>Petición de asociación</span></li>
+    <li><span style='font-family:Arial'>Petición de EAP</span></li>
+  </ul>
+  <p><span style='font-family:Arial'>Al finalizar estas peticiones y sus
+    respectivas respuestas, el algoritmo comienza a realizar intentos por descifrar
+    el <b>PIN</b>. <span class=SpellE>Despues</span> de varios ciclos, obtiene los primeros cuatro dígitos y posteriormente el
+    número entero.</span></p>
+  <p><span style='font-family:Arial'>Existen dos herramientas para realizar este
+    ataque <strong><span style='font-family:Arial'>Wpscrack</span></strong><strong><span
+style='font-family:Arial;font-weight:normal'> y </span></strong> <strong><span style='font-family:Arial'>Reaver</span></strong>,
+    el sistema utilizado es similar. La diferencia es que <b>Reave</b><b>r</b> funciona con más adaptadores pero es
+    un poco más lento. </span></p>
+  <p><span style='font-family:Arial'>Vamos a ver un ataque en la práctica, para
+    ello nos valdremos de dos utilidades <b>Walsh</b> y <b>Reaver</b></span></p>
+  <p><b><span style='font-size:16.0pt;font-family:Arial;color:red'>Walsh</span></b></p>
+  <p><span style='font-family:Arial'>Consiste en una
+    utilidad para detectar los Routers que tienen activado el sistema <b>WPS</b>,
+    diremos que no es fiable del todo ya que da algunos Routers no validos, pero
+    nos ofrece una orientación muy buena para conocer los Routers que disponen de <b>WPS</b>. Al ejecutarlo en un Terminal nos
+    sale la siguiente pantalla en la que podemos ver sus opciones y en la última línea
+    nos sugiere un ejemplo.</span></p>
+  <p align=center style='text-align:center'><span style='font-family:Arial'><img width=614 height=461
+src="Reaver_archivos/image009.jpg" v:shapes="_x0000_i1025"></span></p>
+  <p><span style='font-family:Arial'>Siendo <b>mon0</b> nuestro adaptador Wifi puesto en modo monitor, si no lo es cambiamos por el
+    nuestro, ejecutamos la orden y vemos como nos van saliendo varias redes de
+    nuestro entorno que tienen activado el sistema <b>WPS</b></span></p>
+  <p align=center style='text-align:center'><span style='font-family:Arial'><img width=620 height=464
+src="Reaver_archivos/image011.jpg" v:shapes="_x0000_i1026"></span></p>
+  <p><span style='font-family:Arial'>Y cuando lo queramos parar debemos usar las
+    teclas  ctrl. c, como podréis apreciar en
+    mi entorno hay 9 redes con <b>WPS</b> activado, de esta pantalla solo nos interesan las MAC de los  Routers</span></p>
+  <p><span class=SpellE><b><span style='font-size:16.0pt;font-family:Arial;
+color:red'>Reaver</span></b></span></p>
+  <p><span style='font-family:Arial'>Al ejecutarlo en un <span class=SpellE>terminal</span> vemos que nos salen todas las opciones disponibles y al final nos sugiere un
+    ejemplo al igual que nos hizo <span class=SpellE><b>Walsh</b></span>.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial'><img width=624 height=717
+src="Reaver_archivos/image013.jpg" v:shapes="_x0000_i1027"></span></p>
+  <p><span style='font-family:Arial'>Debemos cambiar la MAC que
+    pone por la de nuestro Router, ejecutamos ese comando y vemos como empieza a
+    escanear los canales hasta que llega al de nuestra red, la identifica  se asocia a ella y empieza a lanzarla pines
+    como se muestra en la imagen de abajo.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial'><img width=618 height=550
+src="Reaver_archivos/image015.jpg" v:shapes="_x0000_i1028"></span></p>
+  <p><span style='font-family:Arial'>Si os fijáis los cuatro
+    primeros dígitos van cambiando, que son los que ahora nos interesa y vemos que
+    poco a poco va subiendo el porcentaje, muy poco a poco hasta que llega un
+    momento en el que da un buen salto como en la imagen inferior. Y los cuatro
+    primeros dígitos  ya son fijos, quiere
+    decir que ya ha encontrado los primeros dígitos. .</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial'><img width=616 height=313
+src="Reaver_archivos/image017.jpg" v:shapes="_x0000_i1029"></span></p>
+  <p><span style='font-family:Arial'>El ataque sigue para buscar
+    los demás dígitos que faltan pero para estos tarda menos ya que solo tiene que
+    encontrar solo tres, porque el último es el checksum de los otros siete dígitos.
+    En la imagen inferior también podemos apreciar unos mensajes de peligro, no son
+    muy significativos, suelen ser por mala comunicación con el Router, pero si
+    realiza 25 intentos fallidos de un mismo pin se queda bloqueado el Reaver y deberíamos
+    pararlo con ctrl. c, pero nos guardaría la sesión, volveríamos a poner otra vez
+    la sentencia que pusimos al principio y se reanudaría la sesión en el punto que
+    la dejamos.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial'><img width=615 height=398
+src="Reaver_archivos/image019.jpg" v:shapes="_x0000_i1030"></span></p>
+  <p><span style='font-family:Arial'>En la parte inferior de la
+    imagen podemos ver como ya ha terminado de realizar el ataque a nuestra red y
+    en primer lugar nos ofrece el tiempo transcurrido en segundos, en la siguiente línea
+    nos sale el pin que ha encontrado, y en la siguiente nos ofrece el dato que a
+    nosotros nos interesa que es la clave de acceso a nuestra red y por ultimo sale
+    el nombre de la red.</span></p>
+  <p1>
+  <span style='font-family:Arial'>Tambien quiro decir que ese pin en concreto lo trean por defecto varios Router, por lo que la nueva version de Reaver es el primer PIN que lanza y con la nueva version tardariamos unos 10 segundos en conocer la WPA</span>.
+  </p>
+  <p><span style='font-family:Arial'>Este tipo de ataques
+    presentan una alternativa mucho más eficiente al paradigma actual de ruptura de
+    WPA ya que <strong><span style='font-family:Arial'>no se realiza un ataque de
+    diccionario por tanto el tamaño y complejidad de la clave es irrelevante</span></strong>.
+    Por otro lado, solo funciona en aquellos Routers que tengan WPS y se encuentre
+    habilitado.</span></p>
+</div>
+<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+  </map></td>
+</body>
+</html>

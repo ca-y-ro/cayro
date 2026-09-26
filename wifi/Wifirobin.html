@@ -1,0 +1,482 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<link rel="shortcut icon" href="WIFI.png">
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>Wifi robin es un punto de acceso muy &quot;especial&quot;</title>
+<style>
+<!--
+a:link, span.MsoHyperlink {
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;
+}
+a:visited, span.MsoHyperlinkFollowed {
+	color:purple;
+	text-decoration:underline;
+	text-underline:single
+}
+body {
+	background-color: #ccffcc;
+}
+-->
+</style>
+</head>
+<body lang=ES link=blue vlink=purple>
+<div class=Section1>
+  <td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+    </map></td>
+  <p align=center style='text-align:center'><b><span style='font-size:26.0pt;color:red'>Wifi-robin</span></b></p>
+  <p><b><u><span style='font-size:18.0pt;color:blue'>Presentación:</span></u></b></p>
+  <p><img width=638 height=264
+src="Wifirobin_archivos/image003.gif" align=right v:shapes="_x0000_s1036 _x0000_s1035 _x0000_s1031">El <em><b><span style='font-family:Arial'>ANTCOR AW54-SC</span></b></em>, producto
+    que se vende en el mercado con otros nombres comerciales tales como el &quot;<strong><span
+style='font-family:Arial'>Wifi Robin</span></strong>&quot;.</p>
+  <p><br>
+    Ambos productos están fabricados por la empresa ANTCOR (desarmando un Wifi
+    Robin verás en su interior la inscripción ANTCOR).</p>
+  <p>La característica que más furor (y dudas) está causando es
+    la de acceder a redes inalámbricas con solo seleccionarlas en su LCD (cifrado
+    wep).</p>
+  <p>Durante las pruebas, mientras el wifirobin actúa no permite
+    prácticamente la navegación de los equipos conectados a la red, por lo que no
+    toquéis las redes de vuestros vecinos con el aparato.</p>
+  <p><br>
+    <b><span style='color:red'>Usadlo bajo vuestra responsabilidad, y con sentido.
+    No hagáis uso del dispositivo en redes que no sean de tu propiedad.</span></b></p>
+  <p><img width=269 height=269
+src="Wifirobin_archivos/image005.jpg" align=right hspace=12 v:shapes="_x0000_s1029">Al
+    ser un artículo que merece un detallado análisis, lo dividiremos en varias
+    partes para poder adentrarnos en todas sus funciones. Mostraremos las funciones
+    del mismo y unas pruebas de laboratorio.<br>
+    <br>
+  </p>
+  <p>Wifi robin es un punto de acceso muy &quot;especial&quot;.
+    Empezaremos comentando sus principales características:<br>
+    &nbsp;<br>
+    <b>* Bridge Wi-Fi<br>
+    * Punto de acceso<br>
+    * Repetidor universal<br>
+    * Router (Firewall, uPNP, DDNS, DMZ etc...)<br>
+    * Router 3G (Necesita modem usb)<br>
+    * Descifra claves WEP<br>
+    * Guía para alinear la antena<br>
+    * Buena interface de gestión (AirOs de ubiquiti)<br>
+    * Salida de antena RP-SMA, la cual nos permite poder cambiar la antena por una
+    mas potente fácilmente.</b></p>
+  <p>* No lleva fuente de alimentacion y consume mucha corriente<br>
+    &nbsp;</p>
+  <p><b><u><span style='font-size:18.0pt;color:blue'>El
+    dispositivo:</span></u></b></p>
+  <p><img width=480 height=193
+src="Wifirobin_archivos/image008.gif" align=right v:shapes="_x0000_s1039 _x0000_s1037 _x0000_s1038"><br>
+    Lo primero que nos encontramos al abrir la caja es con el wifirobin, más pequeño
+    de lo que nos esperábamos.</p>
+  <p>Al sacar el WifiRobin y su
+    soporte encontraremos el cable usb (cuidado con perderlo ya que es bastante
+    especialillo, mirad las fotos), un cable de red RJ45, el soporte del wifi
+    robin, la antena de 5Db y un escueto manual de instrucciones. El dispositivo ya
+    viene actualizado a
+    <st1:PersonName ProductID="la V" w:st="on">
+    la V
+    1.25 de fábrica.<br>
+    <u>En caso de tener otra versión, puedes descargarte la última versión del
+    firmware de wifirobin </u><br>
+    &nbsp;<br>
+    Cuenta con un display LCD, retroiluminado en verde, un poco justo de calidad
+    (se ven algunas líneas decoloradas). &nbsp;Es un display de 4x16 líneas/caracteres,
+    que de todas formas <i>cumple sobradamente su función</i>, ya que solo lo <img width=336 height=205
+src="Wifirobin_archivos/image010.jpg" align=right hspace=12 v:shapes="_x0000_s1030">usaremos
+    para escanear redes en el modo “wifi-robin” y restablecerlo a valores de
+    fábrica en caso de que algo no vaya bien, cosa que también podemos hacer desde
+    su interface Web.</p>
+  <p>Aunque nos lo anuncien como un dispositivo autónomo que no
+    necesita PC para operar, la alimentación la toma de un usb (en algún portátil,
+    sobre todo centrinos antiguos, puede ser necesario usar el doble usb que trae),
+    por lo que necesitaremos un PC para alimentarlo, un adaptador de 220v a usb o
+    una fuente de alimentación de 5V 2Amp. De todas estas opciones solo viene el
+    cable usb en el pack, por lo que sin PC no funciona.<br>
+    <br>
+    Confirmaros que en la caja no se hace ninguna alusión a las funciones
+    “especiales” del wifi robin, suponemos que para no tener problemas con las
+    autoridades competentes.<br>
+    &nbsp;</p>
+  <p><b><u><span style='font-size:18.0pt;color:blue'>Funciones Standard:</span></u></b></p>
+  <p><br>
+    Es complicado distinguir donde acaban las funciones Standard y empiezan las
+    avanzadas, ya que depende mucho del usuario final.<br>
+    &nbsp;<br>
+    Vamos a definir como Standard la función <i>punto de acceso, bridge y router</i>:<br>
+    &nbsp;</p>
+  <p align=center style='text-align:center'><b><span
+style='font-size:15.0pt'>Punto de acceso:</span></b></p>
+  <p align=center style='text-align:center'><img width=612 height=113
+src="Wifirobin_archivos/image012.gif" v:shapes="_x0000_i1025"></p>
+  <p><br>
+    <br>
+    Podemos conectar el dispositivo a nuestro router o modem para dotarlo de
+    funciones inalámbricas. Es tan sencillo como configurarlo en &nbsp;modo AP,
+    ponerle un nombre a la red y configurar el tipo de encriptación a utilizar. En
+    esta función no habilita el servidor de dhcp, por lo que el encargado de
+    asignarnos ip sería nuestro equipo de Internet. PRECAUCION: si tienes un
+    cablemodem, solo le asignara una ip (la ip pública) al primer equipo que se
+    conecte. En caso de que este sea tu equipamiento tienes que optar por la opción
+    Router.<br>
+    &nbsp;</p>
+  <p align=center style='text-align:center'><b><span
+style='font-size:15.0pt'>Bridge:</span></b></p>
+  <p align=center style='text-align:center'><img width=612 height=113
+src="Wifirobin_archivos/image014.gif" v:shapes="_x0000_i1026"></p>
+  <p><br>
+    <br>
+    En este modo, el wifirobin se conecta a una red a la cual le damos los datos
+    previamente (compatible con la función wifirobin) y nos da conectividad por la
+    salida de red Ethernet. Esto es válido para conectar dispositivos a los que no
+    se le pueda incorporar una tarjeta de red wireless, pero si tengan toma Ethernet
+    (xbox clásica, dvds compatibles, PC con tarjeta de red etc…).<br>
+    &nbsp;<br>
+    En este modo, el dispositivo es transparente a la red. A todos los efectos es
+    como si el equipo que se conectara fuera el que esta por cable, y en el router
+    la del PC será la mac que aparezca reflejada.<br>
+    &nbsp;<br>
+    Incluso puedes conectarlo a un router en su apartado wan, y conectar tus
+    equipos de cable sin tener que pasar cable en toda la casa, o incluso entre
+    casas contiguas y prolongar la lan. Esta parte se podría catalogar como
+    avanzada si se quiere usar la 2 opción propuesta. Para un solo dispositivo la
+    configuración es muy fácil. Yo uso un bridge en casa para conectar mi
+    recreativa a la red.<br>
+    &nbsp;</p>
+  <p align=center style='text-align:center'><b><span
+style='font-size:15.0pt'>Router:</span></b></p>
+  <p align=center style='text-align:center'><img width=636 height=118
+src="Wifirobin_archivos/image016.gif" v:shapes="_x0000_i1027"></p>
+  <p><br>
+    En este modo, el wifirobin adquiere la dirección ip, publica o privada, y
+    reparte direcciones por dhcp a los equipos que conectemos por wifi, pudiendo
+    realizar aperturas de puertos, activar uPnP para la red, realizar una apertura
+    DMZ (muy recomendada para las consolas y que no nos marque NAT restrictiva o
+    similar)<br>
+    &nbsp;<br>
+    El dispositivo NO es transparente a la red. El wifi-robin es el equipo que se
+    conecta a la red, y es la mac que aparece en el router o cablemodem.<br>
+    &nbsp;<br>
+    Podríamos conectar varios dispositivos aunque tengamos un modem o un equipo
+    monopuesto gracias a las funciones NAT del router.<br>
+    &nbsp;<br>
+    &nbsp;</p>
+  <p><b><u><span style='font-size:18.0pt;color:blue'>Funciones especiales:</span></u></b></p>
+  <p><br>
+    &nbsp;<br>
+    Dentro de las funciones especiales abarcaremos el uso como repetidor wifi, como
+    router 3g y la famosa opción “wifirobin” que tanto revuelo ha causado.<br>
+    &nbsp;</p>
+  <p align=center style='text-align:center'><b><span
+style='font-size:15.0pt'>Repetidor:</span></b></p>
+  <p align=center style='text-align:center'><img width=624 height=115
+src="Wifirobin_archivos/image018.gif" v:shapes="_x0000_i1028"></p>
+  <p><br>
+    &nbsp;<br>
+    En la opción repetidor, configuraríamos el dispositivo y lo colocaríamos en un
+    área próxima al fin de la cobertura wifi, pero sin aproximarnos demasiado al
+    final de la misma. Una referencia es colocarlo al 20% de la señal de emisión
+    original. Para esto, un portátil con <a
+href="http://www.netstumbler.com/downloads/" target="_blank">network stumbler</a> será tu mejor aliado.<br>
+    &nbsp;<br>
+    Una vez conectado a tu red inalámbrica, el wifirobin emitirá una nueva señal,
+    con el mismo nombre (Modo repetidor) u otro distinto (Modo wifi robin) y desde
+    ese punto tendremos de nuevo la señal al 100%, como podéis observar en el
+    gráfico.<br>
+    <br>
+  </p>
+  <p align=center style='text-align:center'><b><span
+style='font-size:15.0pt'>Router 3g:</span></b></p>
+  <p align=center style='text-align:center'><img border=0 width=588 height=109
+src="Wifirobin_archivos/image020.gif" v:shapes="_x0000_i1029"></p>
+  <p><br>
+    Por cierto, el Wifi Robin permite conectar un modem usb de huawei (parece que
+    no reconoce muchas mas marcas) y usarlo como router wifi.</p>
+  <div align=center>
+    <table border=1 cellspacing=0 cellpadding=0>
+      <tr>
+        <td width=114 valign=top><p>Fabricante</p></td>
+        <td width=114 valign=top><p>Modelo</p></td>
+        <td width=114 valign=top><p>Network</p></td>
+        <td width=114 valign=top><p>AW54-SC</p></td>
+      </tr>
+      <tr>
+        <td width=114 rowspan=4 valign=top><p>HUAWEI</p></td>
+        <td width=114 valign=top><p>EC169</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+      <tr>
+        <td width=114 valign=top><p>EC
+            <st1:chmetcnv UnitName="C" SourceValue="169"
+  HasSpace="False" Negative="False" NumberType="1" TCSC="0" w:st="on">
+            169C</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+      <tr>
+        <td width=114 valign=top><p>EC1260</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+      <tr>
+        <td width=114 valign=top><p>EC1261</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+      <tr>
+        <td width=114 rowspan=3 valign=top><p>ZTE</p></td>
+        <td width=114 valign=top><p>AC2726</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+      <tr>
+        <td width=114 valign=top><p>AC2736</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+      <tr>
+        <td width=114 valign=top><p>AC2746</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+      <tr>
+        <td width=114 valign=top><p>Tlaytech </p></td>
+        <td width=114 valign=top><p>TUE800</p></td>
+        <td width=114 valign=top><p>EVDO</p></td>
+        <td width=114 valign=top><p>OK</p></td>
+      </tr>
+    </table>
+  </div>
+  <p>Si se utiliza la función de 3G, se necesita usar el cargador
+    de pared para el suministro de energía. Tenga en cuenta que el cargador de pared
+    no está incluido en el paquete, por favor ponte en contacto con el sitio
+    oficial para comprar el cargador.<br>
+    <br>
+    Ir a la ficha Red, seleccione el modo de puente, permitan 3G, permiten servidor
+    DHCP, aplicar el cambio, entonces usted puede navegar por Internet mediante el
+    uso de 3G.<br>
+    <br>
+    Tenga en cuenta:<br>
+    1), el apoyo Wifirobin 3G a tu tarjeta de red.<br>
+    2), tarjeta de red 3G se ha conectado al dispositivo por USB<br>
+    3), Wifirobin elegir
+    <st1:PersonName ProductID="la IP" w:st="on">
+    la IP
+    en estado estático, de lo contrario no se puede acceder al dispositivo.</p>
+  <p align=center style='text-align:center'><b><span
+style='font-size:15.0pt'>Wifi-robin:</span></b></p>
+  <p align=center style='text-align:center'><span lang=EN-GB><img border=0 width=624 height=115
+src="Wifirobin_archivos/image022.gif" v:shapes="_x0000_i1030"></span></p>
+  <p><br>
+    Este modo que nos interesa para ver si es capaz de sacar nuestra clave de forma
+    automática y se gestiona desde el display LCD integrado. Simplemente tendremos
+    que escanear las redes disponibles (Wireless Scan) y escoger la red que
+    queramos auditar. </p>
+  <p align=center style='text-align:center'><img border=0 width=182 height=91
+src="Wifirobin_archivos/image024.jpg" v:shapes="_x0000_i1031"><img border=0 width=180 height=90
+src="Wifirobin_archivos/image026.jpg" v:shapes="_x0000_i1032"><img border=0 width=180 height=90
+src="Wifirobin_archivos/image028.jpg" v:shapes="_x0000_i1033"></p>
+  <p><br>
+    Al escogerla veremos que nos muestra los Ivs que va capturando.</p>
+  <p>Terminado este paso, nos
+    mostrará de forma automática un sucessfull informando que estamos conectados de
+    forma correcta, o en el peor de los casos un retry.</p>
+  <p align=center style='text-align:center'><img border=0 width=192 height=96
+src="Wifirobin_archivos/image030.gif" v:shapes="_x0000_i1034"><img border=0 width=192 height=96
+src="Wifirobin_archivos/image032.gif" v:shapes="_x0000_i1035"></p>
+  <p><br>
+    Cuando conecta con la red a auditar, automáticamente enciende nuestra red,
+    teniendo accesible la wifi con el nombre y clave que hayamos configurado, en el
+    siguiente ejemplo seria [el Repeater ESSID: <span style='color:red'>ROBIN</span> y WPA clave Pre-compartidas: <span style='color:red'>12345678</span>. Solo
+    resta conectarnos a nuestra red que seria en este ejemplo <span
+style='color:red'>PRUEBA </span> cuya
+    clave seria <span style='color:red'>31323334353637383940414243</span> en
+    hexadecimal. </p>
+  <p align=center style='text-align:center'><img border=0 width=553 height=682
+src="Wifirobin_archivos/image033.jpg" v:shapes="_x0000_i1036"><br>
+    <br>
+  </p>
+  <p>No muestra la clave en la pantalla. Un punto a mejorar en la próxima actualización del firmware<i>.</i></p>
+  <p>Para verla hay que acceder a
+    <st1:PersonName
+ProductID="la Web" w:st="on">
+    la Web de configuración [<span
+style='color:red'>en el explorador poner 192.168.4.20 y después user: admin
+    pass: admin</span>] y revisarla en el apartado de link setup. En este mismo
+    apartado podéis cambiar el nombre de la red del wifirobin y su password. </p>
+  <p>La clave puede facilitárnosla
+    en hex o ASCII. Realmente son equivalentes pero algún driver o software puede
+    pediros que la especifiquéis en algún formato en concreto.<br>
+    <br>
+    Un ejemplo. La clave que os muestra es en hex de 26 dígitos (cifrado 128) es:<br>
+    <b>31323334353637383940414243</b><br>
+    <br>
+    Si escogemos la opción ASCII y os dará una clave de 13 dígitos:<br>
+    <b>12345657890ABC</b><br>
+    <br>
+    <b><u><span style='font-size:18.0pt;color:blue'>Test:</span></u></b></p>
+  <p>He testeado el producto con
+    varias redes, os dejo un recuadro con los resultados obtenidos:</p>
+  <div align=center>
+    <table border=0 cellpadding=0>
+      <tr>
+        <td width=247 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Thomson Tcw710 &nbsp;<br>
+            Encriptación: &nbsp;Wep 64 Hex 10 dígitos<br>
+            Cliente asociado S/N: &nbsp;Si &nbsp; &nbsp;<br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+        <td width=286 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Thomson Tcw710 &nbsp;<br>
+            Encriptación: &nbsp;Wep 64 Hex 10 dígitos<br>
+            Cliente asociado S/N: &nbsp;NO &nbsp; &nbsp;<br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+      </tr>
+      <tr>
+        <td width=247 valign=top>&nbsp;</td>
+        <td width=286>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width=247 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Thomson Tcw710 &nbsp;<br>
+            Encriptación: &nbsp;Wep 128 Hex 26 dígitos<br>
+            Cliente asociado S/N: &nbsp;Si &nbsp; &nbsp;<br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+        <td width=286 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Thomson Tcw710 &nbsp;<br>
+            Encriptación: &nbsp;Wep 128 Hex 26 dígitos<br>
+            Cliente asociado S/N: &nbsp;No &nbsp; &nbsp;<br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+      </tr>
+      <tr>
+        <td width=247 valign=top>&nbsp;</td>
+        <td width=286>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width=247 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Motorola &nbsp;Sbg900 &nbsp;<br>
+            Encriptación: &nbsp;Wep 128 Hex 26 dígitos<br>
+            Cliente asociado S/N: Si &nbsp; &nbsp; <br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+        <td width=286 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Motorola &nbsp;Sbg900 &nbsp;<br>
+            Encriptación: &nbsp;Wep 128 Hex 26 dígitos<br>
+            Cliente asociado S/N: No &nbsp; <br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+      </tr>
+      <tr>
+        <td width=247 valign=top>&nbsp;</td>
+        <td width=286>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width=247 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Motorola &nbsp;Sbg900 &nbsp;<br>
+            Encriptación: &nbsp;Wep 128 Hex 26 dígitos<br>
+            Cliente asociado S/N: Si &nbsp; &nbsp; <br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+        <td width=286 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Motorola Sbg900&nbsp;</span><span style='font-size:9.0pt;'>RESTRICCION</span><span style='font-size:10.0pt;'> </span><span style='font-size:9.0pt;'>MAC</span><span
+  style='font-size:10.0pt;'><br>
+            Encriptación: &nbsp;Wep 128 Hex 26 dígitos  <br>
+            Cliente asociado S/N: No &nbsp; <br>
+            <span style='color:red'>Éxito: KO</span></span></p></td>
+      </tr>
+      <tr>
+        <td width=247 valign=top>&nbsp;</td>
+        <td width=286>&nbsp;</td>
+      </tr>
+      <tr>
+        <td width=247 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Xavi 7868r &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+            Encriptación: &nbsp;Wep 128 Ascii 13 dígitos<br>
+            Cliente asociado S/N: Si &nbsp; &nbsp;<br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+        <td width=286 valign=top><p><span style='font-size:10.0pt;'>Router:
+            Xavi 7868r &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<br>
+            Encriptación: &nbsp;Wep 128 ASCII 13 dígitos<br>
+            Cliente asociado S/N: NO &nbsp; &nbsp;<br>
+            <span style='color:green'>Éxito: OK</span></span></p></td>
+      </tr>
+    </table>
+  </div>
+  <p><img width=666 height=336
+src="Wifirobin_archivos/image036.gif" align=right v:shapes="_x0000_s1048 _x0000_s1040 _x0000_s1047"><b><u><span
+style='font-size:18.0pt;color:blue'>Técnicamente hablando:</span></u></b></p>
+  <p>El esquema de funcionamiento es de 2 dispositivos separados,
+    pero integrados. <br>
+    <br>
+    Por un lado tenemos el router/ap y por el otro un circuito encargado de
+    desencriptar las redes. Ambos dispositivos comparten una dirección de memoria,
+    en la cual intercambian los dígitos de la clave y los parámetros de la red, por
+    lo que pueden comunicarse y transferirse datos.<br>
+    <br>
+    En las pruebas de laboratorio he comprobado que el wifi robin no inyecta
+    tráfico en la red, aunque si que logra hacer una falsa asociación. Seria bueno
+    que lo modificasen en alguna revisión de firmware, sería ya perfecto (también
+    el que muestre la clave en la pantalla). Al no inyectar tráfico, influye en el
+    tiempo de auditoría. Si hay tráfico en la misma será rápido, y puede demorarse
+    si estáis solos en la red.<br>
+    <br>
+    No he conseguido resultados en redes wpa. La única posibilidad sería con claves
+    por defecto genéricas, pero veo difícil que salga una revisión que incluya esta
+    posibilidad.</p>
+  <p><img width=492 height=204
+src="Wifirobin_archivos/image039.gif" align=right v:shapes="_x0000_s1044 _x0000_s1032 _x0000_s1033"></p>
+  <p>Otra cosa habitual en estos productos chinos es el engordar
+    las características técnicas. He leído que era de 2W, de 1W etc... en varias
+    paginas. La realidad es que monta una tarjeta wireless mini-pci Dlink WMP-G09,
+    la cual ofrece una salida de 100mW. La potencia standard de un portátil es de
+    unos 32 mW por lo que la diferencia es notable, pero solo llegaremos a
+    aproximarnos a la distancia indicada en la publicidad con antenas muy
+    direccionales.<br>
+    <br>
+    <b><span style='font-size:13.0pt;
+color:green'>PROS</span></b><span style='font-size:13.0pt;color:green'>:</span></p>
+  <p><br>
+    <b>* Pequeño y ligero.<br>
+    * Múltiples opciones de funcionamiento.</b></p>
+  <p><b>* Útil para iniciarse en auditorias wifi.</b></p>
+  <p><b>* Fácil aumento de la cobertura wifi en tu casa o
+    conectar dispositivos sin características wireless.<br>
+    </b><br>
+    <b><span style='font-size:13.0pt;
+color:red'>CONTRAS:</span></b><br>
+    <br>
+    <b>* Manual muy escueto y traducción automática.<br>
+    * No inyecta tráfico en las auditorías.<br>
+    * Que no muestre la clave en la pantalla del wifi-robin.<br>
+    * Un solo conector usb, por lo que para 3G tienes que usarlo con un adaptador
+    de corriente externo.</b></p>
+  <p><b>* No trae un adaptador de corriente, si se conecta al puerto USB corremos el peligro de quemar el puerto, conviene conectarlo a 2 puertos ya que consume solo en reposo 450 mw y cada puerto USB aguanta unos 500 mw, en los portatiles agota rapidamente la bateria por su elevado consumo. </b></p>
+  <p><b><u><span style='font-size:18.0pt;color:blue'>Conclusiones:</span></u></b></p>
+  <p><br>
+    Las pruebas realizadas <i>han sido satisfactorias</i>. Es un buen producto, el
+    cual aun sin la opción “wifirobin” vale bien el precio marcado. Solo tenemos
+    que consultar el precio de cualquier repetidor wifi, y solo hace esa función.
+    Wifi-robin nos ofrece mucho más.<br>
+    Para proseguir, si buscáis routers con soporte 3g veréis que no son baratos
+    precisamente, ni abundan en el mercado… por lo que hace que el precio del
+    producto sea ajustado a nuestro punto de vista.<br>
+    &nbsp;<br>
+    Recomendado para aquellos que quieran ampliar o mejorar la conectividad wifi de
+    sus consolas o su lan en general (casas grandes, duplex, muros muy anchos o con
+    muchas canalizaciones etc…), para los que quieran tener un punto de acceso con
+    funciones avanzadas o iniciarse en la auditoría wireless. Puede que haya
+    soluciones más baratas para auditoría (Alfa usb y distros varias), pero ninguna
+    nos ofrece la versatilidad de wifirobin ni la facilidad de uso (sin contar compatibilidad
+    de tarjetas, pc para la live, saber un mínimo de manejo de shells unix etc...).<br>
+    <br>
+    Las posibilidades de que funcione la opción wifirobin en una red wep son muy
+    altas, pero el tiempo varía considerablemente si hay un cliente conectado o
+    está vacía la red.</p>
+</div>
+<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+  </map></td>
+</body>
+</html>

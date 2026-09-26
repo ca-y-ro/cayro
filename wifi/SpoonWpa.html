@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<link rel="shortcut icon" href="WIFI.png">
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>SPOONWPA</title>
+<style>
+<!--
+body {
+	background-color: #ccffcc;
+}
+-->
+</style>
+</head>
+<body lang=ES>
+<div class=Section1>
+  <td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+    </map></td>
+  <p align=center style='text-align:center'><b><span style='font-size:24pt; font-family:Arial; color:#00F'>SpoonWpa </span></b></p>
+  <p><span style='font-family:Arial;color:black'>Vamos a ver como
+    se ve la clave de una red con encriptación WPA. Para conseguirlo es
+    imprescindible, tener buena señal, que este un cliente asociado, un buen
+    diccionario y un rosario. Empezamos arrancando el spoonwpa vemos que es igual
+    que el spoonwep así que seleccionamos nuestra tarjeta el tipo de driver y
+    ponemos en modo unknown victim</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial;color:black'><img width=529 height=438
+src="SpoonWpa_archivos/image001.jpg" v:shapes="_x0000_i1025"></span></p>
+  <p><span style='font-family:Arial;color:black'>Y pasamos a la
+    siguiente pantalla donde nos van apareciendo las redes que tenemos a nuestro
+    alrededor, aquí aparecerá la nuestra que como tenemos el otro ordenador
+    encendido y conectado a la red, nos aparecerá con un cliente asociado.
+    Seleccionamos nuestra red y el cliente asociado a la red, y pulsamos selection
+    ok, si no habría un cliente asociado no nos dejaría continuar.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial;color:black'><img width=896 height=672
+src="SpoonWpa_archivos/image003.jpg" v:shapes="_x0000_i1026"></span></p>
+  <p><span style='font-family:Arial;color:black'>Y ya vamos a la
+    pantalla en la que nos aparece el nombre de nuestra red
+    <st1:PersonName
+ProductID="la MAC" w:st="on">
+    la MAC del MODEM y
+    <st1:PersonName
+ProductID="la MAC" w:st="on">
+    la MAC del cliente asociado
+    pulsamos launch automated y empezamos la captura del HANDSHAKE que es el primer
+    paquete que envía el cliente al MODEM, este paquete es el único que tiene la
+    clave de la red, todos los demás paquetes que capturemos no nos valen para
+    nada, y para capturarle solo hay dos formas, la primera tener suerte y pillar
+    cuando el cliente se conecte a la red, o bien por medio de un ataque
+    desautentificar al cliente de la red, para que se vuelva a autentificar y así
+    poder pillar ese HANDSHAKE, que es lo que vamos hacer nosotros, este ataque
+    suele durar poco y dependerá mucho el éxito que tengamos de la cantidad de
+    señal que dispongamos.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial;color:black'><img width=528 height=438
+src="SpoonWpa_archivos/image004.jpg" v:shapes="_x0000_i1027"></span></p>
+  <p><span style='font-family:Arial;color:black'>En la siguiente
+    imagen ya hemos capturado el HANDSHAKE, y nos pide que pongamos la ruta y el
+    nombre del diccionario, donde creemos que esta la clave, yo en este caso he
+    elegido el diccionario que viene por defecto y he añadido mi clave en la mitad
+    del diccionario. Hay que decir que existen diccionarios que ocupan muchos gigas
+    de espacio y que un ordenador normal puede tardar meses en poder comparar y aun
+    así no estar la clave.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial;color:black'><img width=616 height=426
+src="SpoonWpa_archivos/image006.jpg" v:shapes="_x0000_i1028"></span></p>
+  <p><span style='font-family:Arial;color:black'>Y empieza a
+    pasar el diccionario y vemos como va comparando cada una de las palabras hasta
+    que da con la clave o por el contrario hasta que termina con todo el
+    diccionario, en las imágenes podemos ver que ha tardado alrededor de 2 horas en
+    encontrar la clave y eso que la he puesto aproximadamente en la mitad del
+    diccionario.</span></p>
+  <p align=center style='text-align:center'><span
+style='font-family:Arial;color:black'><img width=530 height=436
+src="SpoonWpa_archivos/image007.jpg" v:shapes="_x0000_i1029">    <img width=527 height=437
+src="SpoonWpa_archivos/image008.jpg" v:shapes="_x0000_i1030"></span></p>
+  <p><span style='font-family:Arial;color:black'>Visto esto
+    podemos afirmar, que si ponemos una clave con símbolos números y letras un poco
+    larga tipo,    3r˜5®d€9A£h?@UŽ   será más fácil que nos parta un rayo, a que
+    nos saquen la clave por el método de ataque por diccionario.</span></p>
+  <p><span style='font-family:Arial;color:black'>Por eso debemos
+    de huir de poner claves con nombres comunes </span></p>
+</div>
+<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+  </map></td>
+</body>
+</html>

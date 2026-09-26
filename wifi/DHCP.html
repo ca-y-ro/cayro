@@ -1,0 +1,130 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<link rel="shortcut icon" href="WIFI.png">
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>Solución a DHCP desactivado</title>
+<style>
+<!--
+a:link, span.MsoHyperlink {
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;
+}
+a:visited, span.MsoHyperlinkFollowed {
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;
+}
+p {
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+}
+body {
+	background-color: #ccffcc;
+}
+-->
+</style>
+</head>
+<body lang=ES link=blue vlink=purple>
+<div class=Section1>
+  <td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+    </map></td>
+  <p align=center style='text-align:center'><b><span style='font-size:18.0pt;
+font-family:Arial;color:red'>Solución a DHCP desactivado</span></b></p>
+  <p><img width=241 height=521
+src="DHCP_archivos/image003.gif" align=right v:shapes="_x0000_s1026 _x0000_s1027 _x0000_s1028"><span
+style='font-family:Arial'>Si un MODEM tiene el DHCP deshabilitado, quiere decir
+    que no nos asignará las Ips automáticamente, es decir, que nos aparecerá lo de
+    “Conexión limitada o nula”.</span></p>
+  <p><span style='font-family:Arial'>Es raro ver este tipo de
+    seguridad en una red, y es relativamente fácil saltarla auque resulta laboriosa,
+    pero explicaremos como se pueden ver los rangos de las IP.</span></p>
+  <p><span style='font-family:Arial'>A la derecha se muestran 2
+    imágenes en Windows con las DHCP habilitadas que es lo normal, en este caso se nos
+    asignará las Ips automáticamente<br>
+    <br>
+    </span></p>
+  <p><b><span lang=EN-GB style='font-family:Arial;'>DHCP
+    (Dynamic Host Configuration Protocol)</span></b></p>
+  <p><span style='font-family:Arial'>Protocolo de Configuración Dinámica del
+    Host. Este protocolo si esta habilitado “que es lo normal” nos permite que un
+    servidor asigne automáticamente las direcciones IP, Mascara y Puerta de enlace,
+    a los ordenadores clientes conforme estos las van necesitando. Existen tres
+    estados </span></p>
+  <p><b><span style='font-family:Arial'>Autenticado y asociado</span></b></p>
+  <p><span style='font-family:Arial'>&nbsp;Estado en el que un dispositivo
+    wireless se une a la red de forma correcta y puede participar de los servicios
+    que se ofrecen, te permite conectarte a Internet. <br>
+    <br>
+    <b>Autenticado y desasociado</b></span></p>
+  <p><span style='font-family:Arial'>&nbsp;Estado en el que un cliente ha sido
+    reconocido por los dispositivos de la red wireless pero que todavía no puede
+    emitir datos ni participar de los recursos. No hay acceso a Internet &quot;Conectividad
+    limitada o nula&quot;.</span></p>
+  <p><b><span style='font-family:Arial'>Desautentificado y desasociado</span></b></p>
+  <p><span style='font-family:Arial'>&nbsp;Estado en el que un
+    cliente está desconectado de la red y no se asoció con el Punto de Acceso.</span></p>
+  <p><b><span style='font-family:Arial;color:blue'>1º Captura de
+    datos</span></b></p>
+  <p><span style='font-family:Arial'>Abrimos por ejemplo el
+    airodump y capturamos un poco de tráfico de la red</span></p>
+  <p><span style='font-family:Arial'><img width=925 height=503
+src="DHCP_archivos/image005.jpg" v:shapes="_x0000_i1025"></span></p>
+  <p><b><span style='font-family:Arial;color:blue'>2º
+    Desencriptación de los datos</span></b></p>
+  <p><span style='font-family:Arial'>Si la red tiene WEP, primero
+    hay que descifrar los DATOS,</span></p>
+  <p><span style='font-family:Arial'>Para ello usaremos el
+    airdecap<br>
+    airdecap -w CLAVEENHEXADECIMALSINPUNTOS archivo.cap</span></p>
+  <p><br>
+    <b><span style='font-family:Arial;color:blue'>3º Abrimos el archivo con
+    ethereal</span></b><span style='font-family:Arial'><br>
+    <br>
+    Si la red no tenía protección abrimos directamente el archivo que nos da el
+    airodump, si tenía abrimos el que nos da el airdecap (el mismo nombre pero acabado en
+    -dec).<br>
+    <br>
+    </span><img width=1066 height=424
+src="DHCP_archivos/image007.jpg" v:shapes="_x0000_i1026"><span
+style='font-family:Arial'><br>
+    <br>
+    Buscamos rangos de Ips. A mí ya directamente me aparecen los correctos, 192.168.1.1
+    es el MODEM y 192.168.1.100 es el adaptador wifi que esta asociado a MODEM. <br>
+    <br>
+    <br>
+    <b><br>
+    4º Nos vamos a Windows y configuramos.</b><br>
+    <br>
+    Vamos a configuración de red en el panel de control, elegimos nuestra tarjeta y
+    propiedades. Luego procedemos tal como indica el dibujo. <br>
+    <br>
+    <img width=805 height=448
+src="DHCP_archivos/image009.jpg" v:shapes="_x0000_i1027"><br>
+    <br>
+    En IP, ponemos cualquiera dentro del rango, yo puse 192.168.1.200. La máscara
+    de red no la ponemos, ya nos la pone el Windows automáticamente según la IP que
+    pongamos. Abrimos el Look@lan, y veremos varias direcciones IP. La 192.168.1.1
+    es el MODEM y las otras dos son los adaptadores asociados, entre ellos el mío
+    192.168.1.200</span></p>
+  <br>
+  <p><img width=830 height=519
+src="DHCP_archivos/image011.jpg" v:shapes="_x0000_i1028"></p>
+  <p><span style='font-family:Arial;color:black'>Viendo que el
+    MODEM es el 192.168.1.1 volvemos a las propiedades de protocolo Internet y </span><span
+style='font-family:Arial'>en la puerta de enlace predeterminada ponemos la IP
+    del MODEM es decir 192.168.1.1</span></p>
+  <p><span style='font-family:Arial'>Lo único que falta es
+    colocar las DNS. Se colocan probando, no hay otra manera. </span></p>
+  <p><span style='font-family:Arial'>Estas dependen del operador
+    que nos suministra el servicio, hay en Internet paginas que nos indican las de
+    cada operador, así que a utilizar Google.</span></p>
+</div>
+<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+  </map></td>
+</body>
+</html>

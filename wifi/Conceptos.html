@@ -1,0 +1,201 @@
+<html xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<link rel="shortcut icon" href="WIFI.png">
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<title>CONCEPTOS BASICOS</title>
+<style>
+<!--
+h1 {
+	font-size:24.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;
+}
+p {
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+}
+pre {
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+}
+body {
+	background-color: #ccffcc;
+}
+-->
+</style>
+</head>
+<body lang=ES>
+<div class=Section1>
+  <td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+    <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+    </map></td>
+  <p align=center style='text-align:center'><b><span style='font-size:26.0pt;font-family:Arial;color:blue'>CONCEPTOS
+    BASICOS </span></b></p>
+  <h1><span style='font-size:12.0pt;font-family:Arial;font-weight:normal;
+'>Aquí se muestra una captura de </span><span
+style='font-size:12.0pt;font-family:Arial'>airdump-ng,</span><span
+style='font-size:12.0pt;font-family:Arial;font-weight:normal;'> que es el verdadero motor de todas las utilidades que se utilizan
+    para  auditar.</span></h1>
+  <h1><span style='font-size:12.0pt;font-family:Arial;font-weight:normal;
+'>Vamos a explicar todos los conceptos que aparecen,
+    para lo cual vamos a dividirles en tres secciones, la primera los
+    imprescindibles de conocer, los segundos los interesantes y por ultimo los que están
+    ahí pero no nos interesan.</span></h1>
+  <div align=center>
+    <table border=1 cellspacing=0 cellpadding=0>
+      <tr>
+        <td width=576><pre><span style='font-family:Arial;'> <span
+  lang=EN-GB>BSSID                        PWR    Beacons   # Data    # / s   CH     MB     ENC        ESSID</span></span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'> 00:15:10:3C:D4:AC      42           19         316       326       6      54.      WEP       WIFI </span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'> 00:09:5B:1F:44:10       36            54           0           0        9     11       OPN        WIRELESS</span></pre>
+          <pre><span
+  style='font-family:Arial'> 00:A5:5C:9F:29:A3      16            14           0           0      11     11       WPA       PIRATA</span></pre>
+          <pre><span
+  style='font-family:Arial'> </span></pre>
+          <pre><span
+  style='font-family:Arial'>&nbsp;</span></pre>
+          <pre><span
+  style='font-family:Arial'> </span><span lang=EN-GB style='font-family:Arial;
+  '>BSSID                         STATION                  PWR       Packets  Probes</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'> 00:15:10:3C:D4:AC     00:0A:4F:1B:B5:2B    41          459        WIFI</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'> 00:15:10:3C:D4:AC     00:14:2D:6D:5D:6F    19            97        WIFI</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre>
+          <pre><span
+  lang=EN-GB style='font-family:Arial;'>&nbsp;</span></pre></td>
+      </tr>
+    </table>
+  </div>
+  <p><b><span style='font-size:18.0pt;font-family:Arial;color:red'>Los Imprescindibles</span></b></p>
+  <p><b><span style='font-family:Arial;color:blue'>MAC</span></b><span
+style='font-family:Arial'><br>
+    Es un numero único compuesto de (6 bloques hexadecimales se nos presenta en
+    formato XX:XX:XX:XX:XX:XX), que asignan los fabricantes a los dispositivos
+    de&nbsp; red (adaptadores de red y MODEM). Es permanente y único y no puede
+    haber 2 iguales “en teoría”. Viene grabado en el propio dispositivo para poder
+    identificarlo de forma inequívoca. Este número es equivalente a nuestro D.N.I.
+    o al código de barras de los productos.</span></p>
+  <p align=center style='text-align:center'><span style='font-family:Arial'><img width=500 height=206
+src="Conceptos_archivos/image002.jpg" v:shapes="_x0000_i1025"></span></p>
+  <p><b><span style='font-family:Arial;color:blue'>BSSID</span></b><span
+style='font-family:Arial'><br>
+    Es el numero MAC del router.</span></p>
+  <p><b><span style='font-family:Arial;color:blue'>PWR</span></b><span
+style='font-family:Arial'><br>
+    Es el nivel de señal el valor mostrado depende del controlador, algunos
+    controladores no lo muestran, conforme te acercas al punto de acceso o a la
+    estación la señal aumenta. Si PWR es -1, el controlador no soporta reportar el
+    nivel de señal.</span></p>
+  <p><span style='font-family:Arial'>&nbsp;<b><span style='color:blue'>#&nbsp;Data</span></b><br>
+    Número de paquetes de datos capturados (si es WEP, sólo cuenta IVs), incluyendo
+    paquetes de datos de difusión general.</span></p>
+  <p><b><span style='font-family:Arial;
+color:blue'>ESSID</span></b><span style='font-family:Arial'><br>
+    Nombre de la red inalámbrica, conocida como &quot;SSID&quot;, puede estar vacía
+    si el ocultamiento de SSID está activo. En este caso airodump-ng tratará de
+    recuperar el SSID de las respuestas a escaneos y las peticiones de asociación.</span></p>
+  <p><b><span style='font-family:Arial;
+color:blue'>STATION</span></b><br>
+    <span style='font-family:Arial'>Es el numero MAC de cada adaptador inalámbrico
+    asociado al MODEM, también se denomina <b>Cliente</b>.
+    En la captura de más arriba se han detectado dos clientes (00:0A:4F:1B:B5:2B y
+    00:14:2D:6D:5D:6F).</span></p>
+  <p><b><span style='font-size:18.0pt;
+font-family:Arial;color:red'>Los Interesantes de conocer</span></b></p>
+  <p><b><span style='font-family:Arial;
+color:blue'># / s</span></b><span style='font-family:Arial'><br>
+    Solo aparece cuando se esta inyectando, indica la cantidad de paquetes por
+    segundo que le estamos inyectando al MODEM. </span></p>
+  <p><b><span style='font-family:Arial;
+color:blue'>ENC</span></b><span style='font-family:Arial'><br>
+    Algoritmo de encriptación en uso. OPN = sin encriptación, &quot;WEP?&quot; =
+    WEP o mayor (no hay suficiente datos para distinguir entre WEP y WPA), WEP (sin
+    la interrogación) indica WEP estática o dinámica, y WPA si TKIP o CCMP están
+    presentes.</span></p>
+  <p><b><span style='font-family:Arial;color:blue'>CH</span></b><span
+style='font-family:Arial'><br>
+    Número de canal (obtenido de los paquetes beacon). Nota: algunas veces se
+    capturan paquetes de datos de otros canales aunque no se esté alternando entre
+    canales debido a las interferencias de radiofrecuencia.</span></p>
+  <p><b><span style='font-size:18.0pt;
+font-family:Arial;color:red'>Los que no nos interesan</span></b></p>
+  <p><b><span style='font-family:Arial;color:blue'>Beacons</span></b><span
+style='font-family:Arial'><br>
+    Número de paquetes-anuncio enviados por el MODEM, a nosotros no nos interesan.</span></p>
+  <p><b><span style='font-family:Arial;color:blue'>MB</span></b><span
+style='font-family:Arial'>.<br>
+    Velocidad máxima soportada por el MODEM.</span></p>
+  <p><b><span style='font-family:Arial;
+color:blue'>Lost</span></b><span style='font-family:Arial'><br>
+    El número de paquetes perdidos en los últimos 10 segundos.</span></p>
+  <p><b><span style='font-family:Arial;
+color:blue'>Packets</span></b><span style='font-family:Arial'><br>
+    El número de paquetes de datos enviados por el cliente.</span></p>
+  <p><b><span style='font-family:Arial;
+color:blue'>Probes</span></b><span style='font-family:Arial'><br>
+    Los ESSIDs a los cuales ha intentado conectarse el cliente.</span></p>
+  <p><span style='font-family:Arial'>Nota: podemos encontrar algunas variaciones
+    según las versiones, pero lo fundamental siempre es lo mismo, que son los datos
+    que hemos definido.</span></p>
+  <p align=center style='text-align:center'><b><span
+style='font-size:26.0pt;font-family:Arial;color:blue'>OTROS CONCEPTOS QUE HAY
+    QUE SABER</span></b></p>
+  <p><b><span style='font-family:Arial;color:red'>Modo Monitor</span></b></p>
+  <p><span style='font-family:Arial'>&nbsp;Forma muy particular de trabajo de las
+    tarjetas wireless. Esta forma de trabajar de las tarjetas wireless es muy
+    atípico y idealmente es poner la tarjeta de forma que pueda detectar todo el
+    trafico que circula por su alrededor. Para que lo entendamos es como &quot;<b>pegar
+    la oreja a la pared para ver que hacen nuestros vecinos”</b>. De esta forma
+    podemos capturar todo el tráfico. Eso si, sin toser y sin casi respirar. <b>No todas las tarjetas soportan este modo, </b>así
+    que hay que tenerlo en cuenta a la hora de elegir la tarjeta.</span></p>
+  <p><b><span style='font-family:Arial;color:red'>Inyección de trafico wireless</span></b></p>
+  <p><span style='font-family:Arial'>&nbsp;Consiste en que la tarjeta mientras
+    esta en modo monitor (&quot;a la escucha&quot;) puede trasmitir paquetes. Esto
+    es muy importante ya que una sola tarjeta mientras esta a la escucha capturando
+    trafico, permite los siguientes servicios: autentificación falsa,
+    desauntetificación, y la <span style='color:blue'>reinyección de tráfico.</span> Tampoco es necesario que este capturando trafico pero si que debe de estar en
+    modo monitor. Tampoco todas las tarjetas permiten inyectar y recibir a la vez.</span></p>
+  <p><b><span style='font-family:Arial;color:red'>Re-inyección de trafico
+    wireless</span></b></p>
+  <p><span style='font-family:Arial'>&nbsp;Forma parte de la inyección de tráfico,
+    normalmente llamado ataque 3. Consiste en que la tarjeta puede retrasmitir
+    paquetes que se obtienen de la siguiente forma: el origen es un cliente
+    estación valido y destino el punto de acceso al cual esta autentificado y
+    asociado al cliente real o incluso un cliente imaginario (lo que se le llama
+    autenticación falsa). El proceso es el siguiente, se captura una petición
+    valida de ARP, se guarda y se retransmite una y otra vez al punto de acceso. El
+    punto de acceso responderá con datos IV únicos y diferentes a cada petición
+    enviada. Por lo tanto no es inyección sino reinyección. Matizar que los datos
+    que se reenvían ha podido ser capturado con anterioridad al proceso final de
+    reinyección. Es decir se captura un petición valida, se guarda en un archivo y
+    posteriormente se trasmite, en algunos casos no hará falta ni siquiera que hay
+    un cliente tanto real como creado falsamente por nosotros. También se puede
+    hacer las dos cosas a la vez, es decir retrasmitir mientras se esta capturando. <span style='color:blue'>En definitiva la reinyección es como imitar el dialogo
+    entre dos loros, ver a que sonidos responde el más veterano en función de los
+    sonidos emitidos por el loro más joven, y posteriormente simular el sonido del
+    loro joven, para que el loro mayor nos responda.</span></span></p>
+</div>
+<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+  <map name="Map" id="Map">
+    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
+  </map></td>
+</body>
+</html>
