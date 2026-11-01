@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<link rel="shortcut icon" href="WIFI.png">
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>WPAMagicKey</title>
-<script>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <link rel="shortcut icon" href="WIFI.png">
+    <title>WPAMagicKey</title>
+    <script>
 		var hexcase = 0;
 		var b64pad  = "";
 
@@ -329,7 +329,7 @@
 			document.getElementById("txtKey").value = hex_md5("bcgbghgg" + bssid.substring(0,8) + essid + bssid).substring(0,20);
 		}
 </script>
-<style type="text/css">
+    <style type="text/css">
 <!--
 body {
 	background-color: #ccffcc;
@@ -344,41 +344,51 @@ body {
 }
 -->
 </style>
-</head>
-<body>
-<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
-  <map name="Map" id="Map">
-    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
-  </map></td>
-<center>
-<p><span class="j">Generador de claves para JAZZTEL_XXXX y WLAN_XXXX</span></p>
-<table align="center">
-  <tr>
-    <td colspan="3">&nbsp;</td>
-  </tr>
-  <tr>
-    <td>ESSID:</td>
-    <td><input TYPE="text" id="txtESSID" size="4" maxlength="4" /></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>BSSID:</td>
-    <td><input TYPE="text" id="txtBSSID" size="17" value="68640C" maxlength="17" />
-    <td>
-  </tr>
-  <tr>
-    <td>Clave:</td>
-    <td><input TYPE="text" id="txtKey" size="22" readonly="readonly" /></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><input TYPE="button" onClick="GenerarKey();" value="Calcular key" />
-    <td>
-  </tr>
-  <tr>
-    <td colspan="3">&nbsp;</td>
-  </tr>
-</table>
-</body>
+  </head>
+  <body>
+    <img src="Anterior.gif" alt="" usemap="#Map" border="0" width="122"
+      height="36"> <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html">
+    </map>
+    <center>
+      <p><span class="j">Generador de claves para JAZZTEL_XXXX y WLAN_XXXX</span></p>
+      <table align="center">
+        <tbody>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>ESSID:</td>
+            <td><input id="txtESSID" size="4" maxlength="4" type="text"></td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>BSSID:</td>
+            <td><input id="txtBSSID" size="17" value="68640C" maxlength="17" type="text">
+            </td>
+            <td> <br>
+            </td>
+          </tr>
+          <tr>
+            <td>Clave:</td>
+            <td><input id="txtKey" size="22" readonly="readonly" type="text"></td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td><br>
+            </td>
+            <td><input onclick="GenerarKey();" value="Calcular key" type="button">
+            </td>
+            <td> <br>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+  </body>
 </html>

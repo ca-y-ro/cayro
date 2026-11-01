@@ -1,11 +1,12 @@
 <html xmlns="http://www.w3.org/TR/REC-html40">
-<head>
-<link rel="shortcut icon" href="WIFI.png">
-<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-<title>Vamos a demostrar que es necesario cambiar siempre la clave que viene
-por defecto en los MODEM, vamos a poner 2 ejemplos de router, pero hay muchos
-mas que estas en parecidas circunstancias</title>
-<style>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <link rel="shortcut icon" href="WIFI.png">
+    <title>Vamos a demostrar que es necesario cambiar siempre la clave que viene
+      por defecto en los MODEM, vamos a poner 2 ejemplos de router, pero hay
+      muchos
+      mas que estas en parecidas circunstancias</title>
+    <style>
 <!--
 a:link, span.MsoHyperlink {
 	color:blue;
@@ -47,45 +48,60 @@ body {
 }
 -->
 </style>
-</head>
-<body lang=ES link=blue vlink=purple>
-<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
-  <map name="Map" id="Map">
-    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
-  </map></td>
-<p align="center">Demostracion de que es necesario cambiar siempre la clave, que
-  viene por defecto en los MODEM, vamos a poner 2 ejemplos de router, pero
-  hay muchos mas de parecidas circunstancias. </p>
-<p><span class=SpellE><b><span
-style='font-family:Arial;color:blue'>Modem</span></b></span><b><span style='font-family:Arial;color:blue'> <span class=SpellE><em><span style='font-family:Arial;font-style:normal;
-'>Comtrend</span></em></span><em></em></span></b></p>
-<p>Los distribuyen Jazztel y
-  MoviStar</p>
-<p>Aparecen como redes con
-  formato <span class=SpellE>WLAN_XXXX</span> y <span class=SpellE>JAZZTEL_XXXX</span></p>
-<ul type=disc>
-  <li style='    font-family: Arial, Helvetica, sans-serif;'>Usaremos como ejemplo una red llamada  <span class=SpellE>WLAN_<b><span style='color:red'>ABCD</span></b></span> y con una MAC <b><span
-     style='color:blue'>A1:B2:C3:D4:E5:06</span></b> respectivamente.</li>
-  <li style='    font-family: Arial, Helvetica, sans-serif;'><span class=SpellE style="text-align: left">Patron</span><span style='text-align: left'> para todas: </span><span style='font-family:
-     Arial; text-align: left;'><span class=SpellE><b><span style='color:maroon'>bcgbghgg</span></b></span></span></li>
-  <li style='    text-align: left; font-family: Arial;'><span style="text-align: left; font-family: Arial, Helvetica, sans-serif;">Y le añadimos la Mac del MODEM : </span><span class=SpellE><b><span style='color:maroon'>bcgbghgg</span><span
-     style='color:blue'>A1B2C3D4E506</span></b></span></li>
-  <li style='    font-family: Arial; text-align: left;'>Sustituimos las 4 últimas letras de la Mac por las 4 últimas letras
-    del nombre de red, quedando: <span class=SpellE><b><span style='color:maroon'>bcgbghgg</span><span style='color:blue'>A1B2C3D4</span><span
-     style='color:red'>ABCD</span></b></span></li>
-  <li style='    font-family: Arial; text-align: left;'>Y le volvemos añadir la Mac del MODEM : <span class=SpellE><b><span style='color:maroon'>bcgbghgg</span><span
-     style='color:blue'>A1B2C3D4</span><span style='color:red'>ABCD</span><span
-     style='color:blue'>A1B2C3D4E506</span></b></span> </li>
-  <li style='    font-family: Arial;'>Calculamos el <span class=SpellE>hash</span> md5 de la cadena
-    anterior y nos da: <b><u>302046464638ba887cb3</u>d9afc11105a1</b></li>
-  <li style='    font-family: Arial;'>Nos quedamos con los 20 primeros caracteres del <span class=SpellE>hash</span> resultante: <b><span style='color:
-     #FF6600'>302046464638ba887cb3</span></b></li>
-</ul>
-<p><span style=" font-family: Arial, Helvetica, sans-serif;"><br>
-  <span class="i">Eso es todo. Lo que nos queda es la clave. (Sencillo, ¿verdad? ;) El proceso para averiguar el algoritmo si que imaginamos que no habrá sido tan fácil. Al haber un md5 en la construcción de la clave habrá sido necesario ingeniería inversa usando rainbow tables Que es el md5: es un algoritmo de reducción criptográfico de 128 bits ampliamente usado. Aquí os dejo una calculadora que simplifica todo el proceso, para que si teneis una red de este tipo lo comprobeis ¡Ojo! solo funciona con Mac que empiezan por 68640C. </span></span> </span></p>
-</p>
-<title>WPAMagicKey</title>
-<script>
+  </head>
+  <body vlink="purple" link="blue" lang="ES">
+    <img src="Anterior.gif" alt="" usemap="#Map" border="0" width="122"
+      height="36"> <map name="Map" id="Map">
+      <area shape="rect" coords="0,2,122,33" href="wifi.html">
+    </map>
+    <p align="center">Demostracion de que es necesario cambiar siempre la clave,
+      que viene por defecto en los MODEM, vamos a poner 2 ejemplos de router,
+      pero hay muchos mas de parecidas circunstancias. </p>
+    <p><span class="SpellE"><b><span style="font-family:Arial;color:blue">Modem</span></b></span><b><span
+          style="font-family:Arial;color:blue"> <span class="SpellE"><em><span
+                style="font-family:Arial;font-style:normal;
+">Comtrend</span></em></span><em></em></span></b></p>
+    <p>Los distribuyen Jazztel y MoviStar</p>
+    <p>Aparecen como redes con formato <span class="SpellE">WLAN_XXXX</span> y
+      <span class="SpellE">JAZZTEL_XXXX</span></p>
+    <ul type="disc">
+      <li style="    font-family: Arial, Helvetica, sans-serif;">Usaremos como
+        ejemplo una red llamada &nbsp;<span class="SpellE">WLAN_<b><span style="color:red">ABCD</span></b></span>
+        y con una MAC <b><span style="color:blue">A1:B2:C3:D4:E5:06</span></b>
+        respectivamente.</li>
+      <li style="    font-family: Arial, Helvetica, sans-serif;"><span class="SpellE"
+          style="text-align: left">Patron</span><span style="text-align: left">
+          para todas: </span><span style="font-family:
+     Arial; text-align: left;"><span class="SpellE"><b><span style="color:maroon">bcgbghgg</span></b></span></span></li>
+      <li style="    text-align: left; font-family: Arial;"><span style="text-align: left; font-family: Arial, Helvetica, sans-serif;">Y
+          le añadimos la Mac del MODEM : </span><span class="SpellE"><b><span style="color:maroon">bcgbghgg</span><span
+              style="color:blue">A1B2C3D4E506</span></b></span></li>
+      <li style="    font-family: Arial; text-align: left;">Sustituimos las 4
+        últimas letras de la Mac por las 4 últimas letras del nombre de red,
+        quedando: <span class="SpellE"><b><span style="color:maroon">bcgbghgg</span><span
+              style="color:blue">A1B2C3D4</span><span style="color:red">ABCD</span></b></span></li>
+      <li style="    font-family: Arial; text-align: left;">Y le volvemos añadir
+        la Mac del MODEM : <span class="SpellE"><b><span style="color:maroon">bcgbghgg</span><span
+              style="color:blue">A1B2C3D4</span><span style="color:red">ABCD</span><span
+              style="color:blue">A1B2C3D4E506</span></b></span> </li>
+      <li style="    font-family: Arial;">Calculamos el <span class="SpellE">hash</span>
+        md5 de la cadena anterior y nos da: <b><u>302046464638ba887cb3</u>d9afc11105a1</b></li>
+      <li style="    font-family: Arial;">Nos quedamos con los 20 primeros
+        caracteres del <span class="SpellE">hash</span> resultante: <b><span style="color:
+     #FF6600">302046464638ba887cb3</span></b></li>
+    </ul>
+    <p><span style=" font-family: Arial, Helvetica, sans-serif;"><br>
+        <span class="i">Eso es todo. Lo que nos queda es la clave. (Sencillo,
+          ¿verdad? ;) El proceso para averiguar el algoritmo si que imaginamos
+          que no habrá sido tan fácil. Al haber un md5 en la construcción de la
+          clave habrá sido necesario ingeniería inversa usando rainbow tables
+          Que es el md5: es un algoritmo de reducción criptográfico de 128 bits
+          ampliamente usado. Aquí os dejo una calculadora que simplifica todo el
+          proceso, para que si teneis una red de este tipo lo comprobeis ¡Ojo!
+          solo funciona con Mac que empiezan por 68640C. </span></span> </p>
+    <p></p>
+    <title>WPAMagicKey</title>
+    <script>
 		var hexcase = 0;
 		var b64pad  = "";
 
@@ -410,7 +426,7 @@ style='font-family:Arial;color:blue'>Modem</span></b></span><b><span style='font
 			document.getElementById("txtKey").value = hex_md5("bcgbghgg" + bssid.substring(0,8) + essid + bssid).substring(0,20);
 		}
 </script>
-<style type="text/css">
+    <style type="text/css">
 <!--
 body {
 	background-color: #ccffcc;
@@ -425,114 +441,124 @@ body {
 }
 -->
 </style>
-</head>
-<body>
-<center>
-<p class="j">Generador de claves para JAZZTEL_XXXX y WLAN_XXXX</p>
-<table align="center">
-  <tr>
-    <td colspan="3">&nbsp;</td>
-  </tr>
-  <tr>
-    <td>ESSID:</td>
-    <td><input TYPE="text" id="txtESSID" size="4" maxlength="4" /></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>BSSID:</td>
-    <td><input TYPE="text" id="txtBSSID" size="17" value="68640C" maxlength="17" />
-    <td>
-  </tr>
-  <tr>
-    <td>Clave:</td>
-    <td><input TYPE="text" id="txtKey" size="22" readonly="readonly" /></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td></td>
-    <td><input TYPE="button" onClick="GenerarKey();" value="Calcular key" />
-    <td>
-  </tr>
-  <tr>
-    <td colspan="3">&nbsp;</td>
-  </tr>
-</table>
-<p align="left"><b><span lang=EN-GB
-style='font-family:Arial;color:blue;'>Modem Thomson </span></b></p>
-<p align="left"><span class=SpellE><span lang=EN-GB style='font-family:Arial;
-'>Caso</span></span><span
-lang=EN-GB style='font-family:Arial;'> <span class=SpellE>redes</span> <span class=SpellE>SpeedTouchXXXXXX</span>.</span></p>
-<div align="left"><br>
-  <span style='font-family:Arial'>Se pudo comprobar que la base del
-  proceso es el número de serie. Así que, vamos a analizar por ejemplo <b><span style='color:blue'>CP0615JT109 (53)</span></b>.
-  De las observaciones realizadas se llegó al siguiente planteamiento:<br>
-  </span> <img width=450 height=143
-src="Ejemplos_archivos/image001.jpg" align=right hspace=12 v:shapes="_x0000_s1027"> <span
-style='font-family:Arial'><br>
-  <b><span style='color:navy'>CP</span> <span
-style='color:red'>YY</span> <span style='color:blue'>WW</span> PP <span
-style='color:maroon'>XXX</span> (CC) </b><br>
-  <br>
-  Donde, que significa cada cosa<span class=GramE>?</span>...<br>
-  <br>
-  <b><span style='color:red'>YY</span></b> es
-  el año de fabricación.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  &nbsp; &nbsp; <span class=GramE>( 2006</span> ) ?<br>
-  <b><span style='color:blue'>WW</span></b> es la semana del año.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-  &nbsp; &nbsp; &nbsp; <span class=GramE>( 15</span> ) una semana de Abril ?<br>
-  <b>PP</b> es el código de
-  producción/fabricación. <span class=GramE>( JT</span> ) ?<br>
-  <b>CC</b> es el código de
-  configuración.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span
-class=GramE>( 53</span> ) ? del estilo 00 - ZZ (0-9/A-Z)<br>
-  <br>
-  Sobre el valor <b><span style='color:maroon'>XXX</span></b>,
-  solo especular. Quizá representa el número de unidad<span class=GramE>?</span><br>
-  <br>
-  Con esto, y tomando como ejemplo &quot;<b><span
-style='color:navy'>CP</span><span style='color:red'>06</span><span
-style='color:blue'>15</span>JT<span style='color:maroon'>109</span> (53)</b>&quot;
-  el proceso es el siguiente:<br>
-  <br>
-  &nbsp;Se eliminan los valores <b>CC</b> y <b>PP</b> del número de serie<br>
-  <br>
-  &nbsp; &nbsp;&quot;<b><span
-style='color:navy'>CP</span><span style='color:red'>06</span><span
-style='color:blue'>15</span><span style='color:maroon'>109</span></b>&quot;<br>
-  <br>
-  &nbsp;Convertimos los valores de <b><span
-style='color:maroon'>XXX</span></b> a hexadecimal, el <b><span style='color:maroon'>109</span></b> en Hexadecimal es <b><span style='color:maroon'>313039</span></b><br>
-  <br>
-  &nbsp; &nbsp;&quot;<b><span
-style='color:navy'>CP</span><span style='color:red'>06</span><span
-style='color:blue'>15</span><span style='color:maroon'>313039</span></b>&quot;<br>
-  <br>
-  &nbsp;Procesamos mediante el algoritmo SHA-1. La familia <b>SHA</b> es un
-  sistema de funciones criptográficas relacionadas de la Agencia de Seguridad
-  Nacional de los Estados Unidos<br>
-  <br>
-  &nbsp; &nbsp;<b><span style='color:red'>742da831d2</span></b>b657fa53d347301ec610e1eb<b><span
-style='color:blue'>f8a3d0</span></b><br>
-  <br>
-  &nbsp;Los últimos 3 bytes hexadecimales se convierten en una cadena ASCII de 6
-  bytes, los añadimos a la palabra &quot;<span class=SpellE>SpeedTouch</span>&quot;,
-  con lo que tenemos el ESSID por defecto.<br>
-  <br>
-  &nbsp; &nbsp;<b>&quot;<span class=SpellE>SpeedTouch<span style='color:blue'>F8A3D0</span></span>&quot;</b><br>
-  <br>
-  &nbsp;Los primeros 5 bytes hexadecimales se convierten en una cadena ASCII de
-  10 bytes,&nbsp; con lo que tenemos la clave WEP/WPA por defecto.<br>
-  <br>
-  &nbsp; <b>&quot;<span style='color:red'>742DA831D2</span>&quot;</b><br>
-  <br>
-  Una vez descubierto esto, sacar una utilidad que con el nombre de la red nos de
-  la clave no fue nada difícil </span>
-  <p align="center">Asi que vuelvo a decir es necesario cambiar siempre la clave que viene por defecto en los
-    MODEM</b></p>
-</div>
-<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
-  <map name="Map" id="Map">
-    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
-  </map></td>
-</body>
+    <center>
+      <p class="j">Generador de claves para JAZZTEL_XXXX y WLAN_XXXX</p>
+      <table align="center">
+        <tbody>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+          <tr>
+            <td>ESSID:</td>
+            <td><input id="txtESSID" size="4" maxlength="4" type="text"></td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td>BSSID:</td>
+            <td><input id="txtBSSID" size="17" value="68640C" maxlength="17" type="text">
+            </td>
+            <td> <br>
+            </td>
+          </tr>
+          <tr>
+            <td>Clave:</td>
+            <td><input id="txtKey" size="22" readonly="readonly" type="text"></td>
+            <td><br>
+            </td>
+          </tr>
+          <tr>
+            <td><br>
+            </td>
+            <td><input onclick="GenerarKey();" value="Calcular key" type="button">
+            </td>
+            <td> <br>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      <p align="left"><b><span style="font-family:Arial;color:blue;" lang="EN-GB">Modem
+            Thomson </span></b></p>
+      <p align="left"><span class="SpellE"><span style="font-family:Arial;
+" lang="EN-GB">Caso</span></span><span style="font-family:Arial;" lang="EN-GB">
+          <span class="SpellE">redes</span> <span class="SpellE">SpeedTouchXXXXXX</span>.</span></p>
+      <div align="left"><br>
+        <span style="font-family:Arial">Se pudo comprobar que la base del
+          proceso es el número de serie. Así que, vamos a analizar por ejemplo <b><span
+              style="color:blue">CP0615JT109 (53)</span></b>. De las
+          observaciones realizadas se llegó al siguiente planteamiento:<br>
+        </span> <img src="Ejemplos_archivos/image001.jpg" v:shapes="_x0000_s1027"
+          width="450" hspace="12" height="143" align="right"> <span style="font-family:Arial"><br>
+          <b><span style="color:navy">CP</span> <span style="color:red">YY</span>
+            <span style="color:blue">WW</span> PP <span style="color:maroon">XXX</span>
+            (CC) </b><br>
+          <br>
+          Donde, que significa cada cosa<span class="GramE">?</span>...<br>
+          <br>
+          <b><span style="color:red">YY</span></b> es el año de
+          fabricación.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; <span class="GramE">( 2006</span> ) ?<br>
+          <b><span style="color:blue">WW</span></b> es la semana del año.&nbsp;
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <span class="GramE">( 15</span> ) una semana de Abril ?<br>
+          <b>PP</b> es el código de producción/fabricación. <span class="GramE">(
+            JT</span> ) ?<br>
+          <b>CC</b> es el código de configuración.&nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; &nbsp;<span class="GramE">( 53</span> ) ? del estilo 00
+          - ZZ (0-9/A-Z)<br>
+          <br>
+          Sobre el valor <b><span style="color:maroon">XXX</span></b>, solo
+          especular. Quizá representa el número de unidad<span class="GramE">?</span><br>
+          <br>
+          Con esto, y tomando como ejemplo "<b><span style="color:navy">CP</span><span
+              style="color:red">06</span><span style="color:blue">15</span>JT<span
+              style="color:maroon">109</span> (53)</b>" el proceso es el
+          siguiente:<br>
+          <br>
+          &nbsp;Se eliminan los valores <b>CC</b> y <b>PP</b> del número de
+          serie<br>
+          <br>
+          &nbsp; &nbsp;"<b><span style="color:navy">CP</span><span style="color:red">06</span><span
+              style="color:blue">15</span><span style="color:maroon">109</span></b>"<br>
+          <br>
+          &nbsp;Convertimos los valores de <b><span style="color:maroon">XXX</span></b>
+          a hexadecimal, el <b><span style="color:maroon">109</span></b> en
+          Hexadecimal es <b><span style="color:maroon">313039</span></b><br>
+          <br>
+          &nbsp; &nbsp;"<b><span style="color:navy">CP</span><span style="color:red">06</span><span
+              style="color:blue">15</span><span style="color:maroon">313039</span></b>"<br>
+          <br>
+          &nbsp;Procesamos mediante el algoritmo SHA-1. La familia <b>SHA</b>
+          es un sistema de funciones criptográficas relacionadas de la Agencia
+          de Seguridad Nacional de los Estados Unidos<br>
+          <br>
+          &nbsp; &nbsp;<b><span style="color:red">742da831d2</span></b>b657fa53d347301ec610e1eb<b><span
+              style="color:blue">f8a3d0</span></b><br>
+          <br>
+          &nbsp;Los últimos 3 bytes hexadecimales se convierten en una cadena
+          ASCII de 6 bytes, los añadimos a la palabra "<span class="SpellE">SpeedTouch</span>",
+          con lo que tenemos el ESSID por defecto.<br>
+          <br>
+          &nbsp; &nbsp;<b>"<span class="SpellE">SpeedTouch<span style="color:blue">F8A3D0</span></span>"</b><br>
+          <br>
+          &nbsp;Los primeros 5 bytes hexadecimales se convierten en una cadena
+          ASCII de 10 bytes,&nbsp; con lo que tenemos la clave WEP/WPA por
+          defecto.<br>
+          <br>
+          &nbsp; <b>"<span style="color:red">742DA831D2</span>"</b><br>
+          <br>
+          Una vez descubierto esto, sacar una utilidad que con el nombre de la
+          red nos de la clave no fue nada difícil </span>
+        <p align="center">Asi que vuelvo a decir es necesario cambiar siempre la
+          clave que viene por defecto en los MODEM</p>
+      </div>
+      <img src="Anterior.gif" alt="" usemap="#Map" border="0" width="122" height="36">
+      <map name="Map" id="Map">
+        <area shape="rect" coords="0,2,122,33" href="wifi.html">
+      </map>
+     </center>
+  </body>
 </html>

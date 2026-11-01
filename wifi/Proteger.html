@@ -1,9 +1,9 @@
 <html xmlns="http://www.w3.org/TR/REC-html40">
-<head>
-<link rel="shortcut icon" href="WIFI.png">
-<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
-<title>Maneras de proteger una red WIFI</title>
-<style>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+    <link rel="shortcut icon" href="WIFI.png">
+    <title>Maneras de proteger una red WIFI</title>
+    <style>
 <!--
 a:link, span.MsoHyperlink {
 	color:blue;
@@ -57,84 +57,90 @@ body {
 }
 -->
 </style>
-</head>
-<body lang=ES link=blue vlink=purple>
-<div class=Section1>
-  <td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
+  </head>
+  <body vlink="purple" link="blue" lang="ES">
+    <div class="Section1"> <img src="Anterior.gif" alt="" usemap="#Map"
+        border="0" width="122" height="36"> <map name="Map" id="Map">
+        <area shape="rect" coords="0,2,122,33" href="wifi.html">
+      </map>
+      <span class="Section1">
+        <p style="text-align:center" align="center"><b><span style="font-size:18.0pt;
+font-family:Arial;color:red">Maneras de proteger una red WIFI</span></b><br>
+        </p>
+        <p><br>
+          Hay diversos medios para proteger una red WIFI, los más comunes son:<br>
+          <b><br>
+            <span style="color:blue">Filtrado MAC</span></b><br>
+          <br>
+          El punto de acceso (MODEM) sólo permite la entrada a la red de los
+          equipos con <st1:personname productid="la MAC" w:st="on"> la MAC
+            especificada. <st1:personname productid="la MAC" w:st="on"> La MAC
+              es una manera de identificación única de tarjetas de red, ya sean
+              WIFI o no.<br>
+              Notaremos que esto está habilitado porque al intentar conectar a
+              la red no podremos, a pesar de ser la señal buena. Se soluciona
+              observando con airdump-ng un cliente legítimo saciado a esa red y
+              cambiando nuestra MAC por esa.</st1:personname></st1:personname></p>
+        <p><b><span style="font-family:Arial;color:blue">Clave WEP</span></b><span
+            style="font-family:Arial"> <br>
+            <br>
+            Se basan en el cifrado WEP (Wireless Equivalent Privacy). Son
+            relativamente vulnerables. Es en el que nos vamos a centrar ya que
+            el más común. Su uso debería ser rápidamente substituido con
+            encriptación <b>WPA</b>.</span></p>
+        <p><b><span style="font-family:Arial;color:blue">Clave WPA</span></b><span
+            style="font-family:Arial"><br>
+            <br>
+            Muy difíciles de descifrar, cada vez hay mas, se puede decir que son
+            prácticamente seguras si la clave es larga y compleja.<br>
+            <br>
+            <b><span style="color:blue">ESSID oculto</span></b><br>
+            <br>
+            Son redes ocultas, que sólo se ven con determinados programas, como
+            puede ser el Kismet, al no aparecer normalmente, no se ve que
+            existen por lo que pasan desapercibidas. </span></p>
+        <p><b><span style="font-family:Arial;color:blue">DHCP deshabilitado</span></b><span
+            style="font-family:Arial"><br>
+            <br>
+            El MODEM no nos asigna las IPs. Nos permite conectar pero al cabo de
+            un rato nos pone "Conectividad limitada o nula", por lo que no
+            tenemos acceso a Internet.</span></p>
+        <p><br>
+          Además, estos medios de encriptación a veces se pueden complementar
+          entre ellos, por ejemplo una red con WEP, filtrado MAC y DHCP
+          deshabilitado, u otra con WPA y filtrado MAC. Lo que nunca os vais a
+          poder encontrar va a ser una red con WPA y WEP al mismo tiempo.</p>
+        <p align="center"><b><span style="font-size:18.0pt;
+font-family:Arial;color:red">Mis recomendaciones para proteger nuestra red
+              inalámbrica</span></b></p>
+        <p><strong>Para los asustadizos:</strong></p>
+      </span>
+      <p><span class="Section1"> </span> <span class="l">1.- Si usas WEP te da
+          igual que la clave sea 1234456 o
+          A23dsseR%%&amp;/asd1234as333rfasdc33q111. Sale en segundos. Cambia el
+          modo de seguridad Wifi a WPA/WPA2 .</span></p>
+      <p><span class="l">2.- Con que se cambie la password de la wifi que viene
+          por defecto es más que suficiente, siempre que se use WPA/WPA2 y que
+          sea la clave de más de 10 caracteres, ya que esto dificulta mucho el
+          ataque por diccionario.</span></p>
+      <span class="Section1">
+        <p> <strong>Para los paranoicos:</strong></p>
+      </span>
+      <p> <span class="l">1.- Usa una clave con mayúsculas, minúsculas, números
+          y meta caracteres (#_@? etc.)<br>
+          2.- Deshabilita el servidor DHCP del router<br>
+          3.- Oculta el SSID<br>
+          4.- Activa el filtrado MAC<br>
+          5.- Implanta un servidor RADIUS<br>
+          6.- Usa un rango de red diferente a 192.168.X.X <br>
+          7.- Haz subnetting para restringir la amplitud de tu rango de red.</span><br>
+      </p>
+      <span class="Section1">
+        <p> <strong>Para los extremadamente paranoicos:</strong> </p>
+      </span> <span class="l">1.- Conecta el puto cable de red.</span> </div>
+    <img src="Anterior.gif" alt="" usemap="#Map" border="0" width="122" height="36">
     <map name="Map" id="Map">
-      <area shape="rect" coords="0,2,122,33" href="wifi.html" />
-    </map></td>
-  <span class="Section1">
-  <p align=center style='text-align:center'><b><span style='font-size:18.0pt;
-font-family:Arial;color:red'>Maneras de proteger una red WIFI</span></b><br>
-  </p>
-  <p><br>
-    Hay diversos medios para proteger una red WIFI, los más comunes son:<br>
-    <b><br>
-    <span style='color:blue'>Filtrado MAC</span></b><br>
-    <br>
-    El punto de acceso (MODEM) sólo permite la entrada a la red de los equipos con
-    <st1:PersonName
-ProductID="la MAC" w:st="on">
-    la MAC especificada.
-    <st1:PersonName
-ProductID="la MAC" w:st="on">
-    La MAC es una manera de
-    identificación única de tarjetas de red, ya sean WIFI o no.<br>
-    Notaremos que esto está habilitado porque al intentar conectar a la red no
-    podremos, a pesar de ser la señal buena. Se soluciona observando con airdump-ng
-    un cliente legítimo saciado a esa red y cambiando nuestra MAC por esa.</p>
-  <p><b><span style='font-family:Arial;color:blue'>Clave WEP</span></b><span
-style='font-family:Arial'> <br>
-    <br>
-    Se basan en el cifrado WEP (Wireless Equivalent Privacy). Son relativamente
-    vulnerables. Es en el que nos vamos a centrar ya que el más común. Su uso
-    debería ser rápidamente substituido con encriptación <b>WPA</b>.</span></p>
-  <p><b><span style='font-family:Arial;color:blue'>Clave WPA</span></b><span
-style='font-family:Arial'><br>
-    <br>
-    Muy difíciles de descifrar, cada vez hay mas, se puede decir que son
-    prácticamente seguras si la clave es larga y compleja.<br>
-    <br>
-    <b><span style='color:blue'>ESSID oculto</span></b><br>
-    <br>
-    Son redes ocultas, que sólo se ven con determinados programas, como puede ser
-    el Kismet, al no aparecer normalmente, no se ve que existen por lo que pasan desapercibidas. </span></p>
-  <p><b><span style='font-family:Arial;color:blue'>DHCP deshabilitado</span></b><span
-style='font-family:Arial'><br>
-    <br>
-    El MODEM no nos asigna las IPs. Nos permite conectar pero al cabo de un rato
-    nos pone &quot;Conectividad limitada o nula&quot;, por lo que no tenemos acceso
-    a Internet.</span></p>
-  <p><br>
-    Además, estos medios de encriptación a veces se pueden complementar entre
-    ellos, por ejemplo una red con WEP, filtrado MAC y DHCP deshabilitado, u otra
-    con WPA y filtrado MAC. Lo que nunca os vais a poder encontrar va a ser una red
-    con WPA y WEP al mismo tiempo.</p>
-  <p align="center"><b><span style="font-size:18.0pt;
-font-family:Arial;color:red">Mis  recomendaciones para proteger nuestra red inal&aacute;mbrica</span></b></p>
-  <p><strong>Para los asustadizos:</strong></p>
-  </span>
-  <p><span class="Section1"> </span> <span class="l">1.- Si usas WEP te da igual que la clave sea  1234456 o A23dsseR%%&amp;/asd1234as333rfasdc33q111. Sale en segundos. Cambia el  modo de seguridad Wifi a WPA/WPA2
-    .</span></p>
-  <p><span class="l">2.- Con que se cambie la password de la wifi que viene por defecto es m&aacute;s que  suficiente, siempre que se use WPA/WPA2 y que sea la clave de m&aacute;s de 10  caracteres, ya que esto dificulta mucho el ataque por diccionario.</span></p>
-  <span class="Section1">
-  <p> <strong>Para los  paranoicos:</strong></p>
-  </span>
-  <p> <span class="l">1.- Usa una clave con may&uacute;sculas, min&uacute;sculas, n&uacute;meros y meta caracteres (#_@? etc.)<br>
-    2.- Deshabilita el servidor DHCP del router<br>
-    3.- Oculta el SSID<br>
-    4.- Activa el filtrado MAC<br>
-    5.- Implanta un servidor RADIUS<br>
-    6.- Usa un rango de red diferente a 192.168.X.X <br>
-    7.- Haz subnetting para restringir la amplitud de tu rango de red.</span><br>
-  </p>
-  <span class="Section1">
-  <p> <strong>Para los  extremadamente paranoicos:</strong> </p>
-  </span> <span class="l">1.- Conecta el puto cable de red.</span> </div>
-<td align="center"width="126"><img src="Anterior.gif" alt="" width="122" height="36" border="0" usemap="#Map" />
-  <map name="Map" id="Map">
-    <area shape="rect" coords="0,2,122,33" href="wifi.html" />
-  </map></td>
-</body>
+      <area shape="rect" coords="0,2,122,33" href="wifi.html">
+    </map>
+  </body>
 </html>
