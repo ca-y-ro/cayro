@@ -11,44 +11,44 @@ body {
 -->
 </style> </head>
   <body lang="ES">
-    <div class="Section1"> <img src="Anterior.gif" alt="" usemap="#Map"
-        border="0" width="122" height="36"> <map name="Map" id="Map">
+    <div class="Section1"> <img src="Anterior.gif" alt="" usemap="#Map" border="0"
+        width="122" height="36"> <map name="Map" id="Map">
         <area shape="rect" coords="0,2,122,33" href="wifi.html">
       </map>
       <p style="text-align:center" align="center"><b><span style="font-size:24pt; font-family:Arial; color:#00F">SpoonWpa
             </span></b></p>
       <p><span style="font-family:Arial;color:black">Vamos a ver como se ve la
-          clave de una red con encriptación WPA. Para conseguirlo es
-          imprescindible, tener buena señal, que este un cliente asociado, un
+          clave de una red con encriptacion WPA. Para conseguirlo es
+          imprescindible, tener buena seÃ±al, que este un cliente asociado, un
           buen diccionario y un rosario. Empezamos arrancando el spoonwpa vemos
-          que es igual que el spoonwep así que seleccionamos nuestra tarjeta el
+          que es igual que el spoonwep asÃ­ que seleccionamos nuestra tarjeta el
           tipo de driver y ponemos en modo unknown victim</span></p>
       <p style="text-align:center" align="center"><span style="font-family:Arial;color:black"><img
             src="SpoonWpa_archivos/image001.jpg" v:shapes="_x0000_i1025" width="529"
             height="438"></span></p>
       <p><span style="font-family:Arial;color:black">Y pasamos a la siguiente
           pantalla donde nos van apareciendo las redes que tenemos a nuestro
-          alrededor, aquí aparecerá la nuestra que como tenemos el otro
-          ordenador encendido y conectado a la red, nos aparecerá con un cliente
+          alrededor, aquÃ­ aparecerÃ¡ la nuestra que como tenemos el otro
+          ordenador encendido y conectado a la red, nos aparecerÃ¡ con un cliente
           asociado. Seleccionamos nuestra red y el cliente asociado a la red, y
-          pulsamos selection ok, si no habría un cliente asociado no nos dejaría
+          pulsamos selection ok, si no habrÃ­a un cliente asociado no nos dejarÃ­a
           continuar.</span></p>
       <p style="text-align:center" align="center"><span style="font-family:Arial;color:black"><img
             src="SpoonWpa_archivos/image003.jpg" v:shapes="_x0000_i1026" width="896"
             height="672"></span></p>
       <p><span style="font-family:Arial;color:black">Y ya vamos a la pantalla en
           la que nos aparece el nombre de nuestra red <st1:personname productid="la MAC"
-            w:st="on"> la MAC del MODEM y <st1:personname productid="la MAC" w:st="on">
+            w:st="on"> la MAC del MÃ“DEM y <st1:personname productid="la MAC" w:st="on">
               la MAC del cliente asociado pulsamos launch automated y empezamos
-              la captura del HANDSHAKE que es el primer paquete que envía el
-              cliente al MODEM, este paquete es el único que tiene la clave de
-              la red, todos los demás paquetes que capturemos no nos valen para
+              la captura del HANDSHAKE que es el primer paquete que envÃ­a el
+              cliente al MÃ“DEM, este paquete es el Ãºnico que tiene la clave de
+              la red, todos los demÃ¡s paquetes que capturemos no nos valen para
               nada, y para capturarle solo hay dos formas, la primera tener
               suerte y pillar cuando el cliente se conecte a la red, o bien por
               medio de un ataque desautentificar al cliente de la red, para que
-              se vuelva a autentificar y así poder pillar ese HANDSHAKE, que es
+              se vuelva a autentificar y asÃ­ poder pillar ese HANDSHAKE, que es
               lo que vamos hacer nosotros, este ataque suele durar poco y
-              dependerá mucho el éxito que tengamos de la cantidad de señal que
+              dependerÃ¡ mucho el Ã©xito que tengamos de la cantidad de seÃ±al que
               dispongamos.</st1:personname></st1:personname></span></p>
       <p style="text-align:center" align="center"><span style="font-family:Arial;color:black"><img
             src="SpoonWpa_archivos/image004.jpg" v:shapes="_x0000_i1027" width="528"
@@ -56,10 +56,10 @@ body {
       <p><span style="font-family:Arial;color:black">En la siguiente imagen ya
           hemos capturado el HANDSHAKE, y nos pide que pongamos la ruta y el
           nombre del diccionario, donde creemos que esta la clave, yo en este
-          caso he elegido el diccionario que viene por defecto y he añadido mi
+          caso he elegido el diccionario que viene por defecto y he aÃ±adido mi
           clave en la mitad del diccionario. Hay que decir que existen
           diccionarios que ocupan muchos gigas de espacio y que un ordenador
-          normal puede tardar meses en poder comparar y aun así no estar la
+          normal puede tardar meses en poder comparar y aun asÃ­ no estar la
           clave.</span></p>
       <p style="text-align:center" align="center"><span style="font-family:Arial;color:black"><img
             src="SpoonWpa_archivos/image006.jpg" v:shapes="_x0000_i1028" width="616"
@@ -67,7 +67,7 @@ body {
       <p><span style="font-family:Arial;color:black">Y empieza a pasar el
           diccionario y vemos como va comparando cada una de las palabras hasta
           que da con la clave o por el contrario hasta que termina con todo el
-          diccionario, en las imágenes podemos ver que ha tardado alrededor de 2
+          diccionario, en las imÃ¡genes podemos ver que ha tardado alrededor de 2
           horas en encontrar la clave y eso que la he puesto aproximadamente en
           la mitad del diccionario.</span></p>
       <p style="text-align:center" align="center"><span style="font-family:Arial;color:black"><img
@@ -75,10 +75,10 @@ body {
             height="436">&nbsp;&nbsp;&nbsp; <img src="SpoonWpa_archivos/image008.jpg"
             v:shapes="_x0000_i1030" width="527" height="437"></span></p>
       <p><span style="font-family:Arial;color:black">Visto esto podemos afirmar,
-          que si ponemos una clave con símbolos números y letras un poco larga
-          tipo, &nbsp;&nbsp;&nbsp;3r˜5®d€9A£h?@UŽ &nbsp;&nbsp;será más fácil que
-          nos parta un rayo, a que nos saquen la clave por el método de ataque
-          por diccionario.</span></p>
+          que si ponemos una clave con sÃ­mbolos nÃºmeros y letras un poco larga
+          tipo, &nbsp;&nbsp;&nbsp;3r&amp;5$d?9A"h?@U&amp; &nbsp; sera mas fÃ¡cil
+          que nos parta un rayo, a que nos saquen la clave por el mÃ©todo de
+          ataque por diccionario.</span></p>
       <p><span style="font-family:Arial;color:black">Por eso debemos de huir de
           poner claves con nombres comunes </span></p>
     </div>
